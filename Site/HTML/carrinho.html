@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho//Game_Mania</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class = "menu">
+            <img class="img_logo" src="IMG/game.jpg" 
+            alt="logo">
+            <div class="logo"><p class="Game_Mania">Game_Mania</p></div>
+            <form class="pesquisa" action="action_page.php">
+                 <input class="pesquisa" type="text" placeholder="Pesquisa" name="search">
+             </form>
+            <a class="link_carrinho"href="carrinho.html">Meu carrinho!</a>
+            <img class="img_usuario" src="IMG/fotousuario.png" alt="foto do usuario"  width = "5%">
+            <a  class="link_login"href="login1.html">Login in</a>
+        </nav>
+    </header>
+    
+    <section class="carrinho">
+        <h1 class="letracarrinho">Meu carrinho!</h1>
+        <hr class="hrverif1">
+        <br><h1 id="edicaoexclusiva">Edição Exclusiva! </h1>
+        <a href="ForzaHorizon5.html">  
+        <div class="caixacarrinho">
+            <img class="imgjogocarrinho" src="IMG/ForzaHorizon5.jpg" alt="Forza Horizon 5" > 
+        </div>
+            <div class="caixaescritacarrinho">
+                 <h2 class="escritajogocarrinho">Forza Forza Horizon 5/Xbox One e Xbox Serie X/Edição Exclusiva</h2>
+                <p class="escritajogocarrinho">R$120,00</p>
+         </div>
+         </a>
+         <hr id="carrinhoHr">
+         <div id="carrinho">
+         
+         </div> 
+         <button id="pagar" value="comprar!" onclick="addPrecoCarrinho(document.getElementById('precoCarrinho').textContent, 1)">
+            <a href='login2.html'>Comprar!</a>
+        </button>
+        
+         
+         <button class="inicio" onclick="Alert"><a  class="link" href="menu.html">Ir ao inicio</a></button>
+    </section>
+    <footer>
+        <div id="footer"><h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil <a href="relatarErro.html">|Relatar erro</a></h3></div>
+        <a href="https://www.instagram.com/">
+            <img class="redesFooter" src="IMG/instagram.png">
+        </a>
+        <a href="https://www.twitter.com/">
+            <img class="redesFooter" src="IMG/twitter.png">
+        </a>
+        <a href="https://www.tiktok.com/">
+            <img class="redesFooter" src="IMG/tiktok.png">
+        </a>
+        <a href="https://www.facebook.com/">
+            <img class="redesFooter" src="IMG/facebok.webp">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img class="redesFooter" src="IMG/linkedin.png">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img class="redesFooter" src="IMG/youtube.png">
+        </a>
+        <a href="https://www.whatsapp.com/">
+            <img class="redesFooter" src="IMG/whatsapp.webp">
+            <h2 id="whatsapp">(47)996954527</h2>
+        </a>
+       
+    </footer>
+    
+</body>
+<script src="JS/carrinho.js"></script>
+</html>

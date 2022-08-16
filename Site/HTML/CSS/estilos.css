@@ -1,0 +1,2296 @@
+body{
+    background-color: #777777;
+    
+}
+.menu {
+    height: 80px;
+
+}
+@media screen and (max-width: 600px) {
+    .m1{
+        height: 40px;
+
+    }
+    
+}
+
+.img_logo{
+    height: 70px ;
+    width: 70px;
+  
+    
+    border-radius: 12px;
+    position: absolute;
+    left:25px;
+    top:10px;
+    
+} 
+@media screen and (max-width: 600px) {
+    .m2{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 40px;
+    }
+    
+}
+
+
+
+.Game_Mania{
+    color: black;
+    font-family: Goudy Stout;
+    font-size: 15px ;
+    text-shadow: 0 0 20px #000000 ;
+    
+}
+@media  screen and (max-width: 600px) {
+    .m4{
+    color: black;
+    font-family: Goudy Stout;
+    font-size: 8px ;
+    text-shadow: 0 0 5px #000000 ; 
+    
+
+    }
+    
+}
+
+.menu .logo{
+     background-color:#c4c0c0;
+     border-radius: 18px;
+     border-color: #F22652;
+     position: absolute;
+     left: 115px;
+     top: 20px;
+
+
+
+
+}
+@media  screen and (max-width: 600px) {
+    .m3{
+        position: absolute;
+        left:5px;
+    }
+
+    
+}
+.pesquisa{
+    
+    height: 42px;
+    width: 365px;
+    position: absolute;
+    left: 200px;
+    top:12px;
+
+}
+@media screen and (max-width: 600px) {
+    .m5{
+        height: 22px;
+        width: 135px;
+        position: absolute;
+        left: 120px;
+        
+    }
+    
+}
+.menu .img_usuario{
+    height: 40px;
+    width: 40px;
+    border-radius: 60px;
+    position:absolute;
+    top: 28px;
+    right: 360px;
+}
+@media screen and (max-width: 600px) {
+    .m6{
+        height: 15px;
+        width: 15px;
+        border-radius: 30px;
+        position:absolute;
+        left: 400px; 
+        top:2px;
+    }
+    
+}
+.menu .link_carrinho{
+    color: white;
+    text-decoration: none;
+    font-family: Times;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    right: 200px;
+}
+@media screen and (max-width: 600px) {
+    .m7{
+      font-size: 5px;
+      position: relative; 
+      left:450px;
+      top: 2px;
+     
+    
+}
+}
+
+.menu .link_carrinho:hover { /*passar com o mouse*/
+    color: #5ab4dc ;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+}
+@media screen and (max-width: 600px) {
+    .m7:hover{
+        color: #5ab4dc ;
+        text-decoration: none;
+        font-size: 5px;
+        
+     
+    
+}
+}
+.menu .link_login{
+    color: white;
+    font-family: Times;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    right: 70px;
+}
+@media screen and (max-width: 600px) {
+    .m8{
+        font-size: 5px;
+        position: absolute; 
+        left:520px;
+        top: 20px;  
+    }
+    
+}
+.menu .link_login:hover { /*passar com o mouse*/
+    color: #5ab4dc ;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    
+}
+
+
+.hr1 {
+    border-radius: 10px;
+
+}
+@media screen and (max-width: 600px){
+    .respons1{
+        border: 5px solid white;
+        border-radius: 5px;  
+    }
+    
+}
+.menuprincipal{
+    height:1000px;
+    
+}
+.Inicio{
+    height: 280px;
+}
+.Titulos{
+    display:inline-flex;
+    background-color: white;
+    height: 30px;
+    width: 90px;
+}
+
+
+.pesquisarapida{
+    display: inline-flex;
+    background-color: #f3325a;
+    height: 30px ;
+    width: 80px ;
+
+}
+.bt1 , .bt2 , .bt3{
+    color: white;
+    background-color: #f3325a;
+    width: 300px;
+    height: 70px;
+    left:50px;
+}
+.bt1 , .bt2 , .bt3 :hover{
+    background-color: #f3325a;
+}
+
+.pesquisarapida, a{
+    color:black;
+}
+.Titulo{
+    font-family:Times;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top:115px;
+    left:420px;
+}
+.botaosobre{
+    background-color: #f3325a;
+    height: 36px;
+    width: 100px;
+    position:absolute;
+    top:420px;
+    left: 422px;
+
+}   
+.letrasobre{
+    font-family: Times;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top:10px;
+    left: 30px;
+
+}
+.img_texto{
+   height: 300px;
+   width: 300px;
+   position: absolute;
+   left: 900px;
+   top: 150px;
+
+}
+.Jogos{
+    color:white;
+}
+
+.lojafisica{
+    height: 250px;
+    width: 400px;
+    position:absolute;
+    top: 480px;
+    left: 430px;
+}
+.inicio{
+    height: 250px;
+}
+
+#promoção{
+    height:1350px;
+}
+
+.promoção{
+    font-family:Times;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 800px;
+    left:400px;
+}
+
+
+.caixaxbox{
+    height: 300px ;
+    width: 300px;
+    background: #c4c0c0;
+    position: absolute;
+    top:900px;
+    left: 160px;
+}
+.caixaxbox #xbox{
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    left: 22px;
+    top:20px;
+
+}
+.preçoxbox{
+    background:#c4c0c0;
+    text-align: center;
+    font-size: 20px;
+    font-family: Times;
+    position:absolute;
+    top:1230px;
+    left:110px;
+}
+.preçoxbox:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixaplaystation{
+    height: 300px ;
+    width: 300px;
+    background: #c4c0c0;
+    position: absolute;
+    top:900px;
+    right: 160px;
+}
+.caixaplaystation .playstation{
+    height: 160px;
+    width: 260px;
+    position: absolute;
+    right: 20px;
+    top:70px;
+}
+.preçoplaystation{
+    background:#c4c0c0;
+    font-size: 20px;
+    text-align: center;
+    font-family: Times;
+    position:absolute;
+    top:1230px;
+    right: 110px;
+}
+.preçoplaystation:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixaBattlefield{
+    height: 300px ;
+    width: 300px;
+    background: #c4c0c0;
+    position: absolute;
+    top:1400px;
+    left: 160px;
+}
+.caixaBattlefield .Battlefield{
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    left: 22px;
+    top:20px;
+}
+.preçoBattlefield{
+    background:#c4c0c0;
+    width: 420px;
+    height: 115px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Times;
+    position:absolute;
+    top:1730px;
+    left:110px;
+}
+.preçoBattlefield:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixaAssassins{
+    height: 300px ;
+    width: 300px;
+    background: #c4c0c0;
+    position: absolute;
+    top:1400px;
+    right: 160px;
+}
+.caixaAssassins .Assassins{
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+}
+.preçoAssassins{
+    background:#c4c0c0;
+    font-size: 20px;
+    text-align: center;
+    font-family: Times;
+    position:absolute;
+    top:1730px;
+    right: 110px;
+}
+.preçoAssassins:hover{ 
+    box-shadow:20px 10px 10px black;
+}
+.hrtres{
+    border: 10px solid white;
+    border-radius: 10px;
+    width: 10000px;
+}
+.footer{
+    position: absolute;
+    top:1900px;
+}
+.rodapé1{
+    color: #000000;
+    position: relative;
+    left:350px;
+   
+
+    
+}
+@media screen and  (max-width: 600px){
+    .r1{
+
+        color: #000000;
+        position: absolute;
+        left:60px;
+        top:900px
+        
+    }
+}
+    
+
+.rodapé2{
+    position: relative;
+    left: 600px;
+    color: #000000;
+}
+@media screen and (max-width: 600px) {
+    .r2{
+        position: relative;
+        left: 220px;
+        color: #000000; 
+        top:40px;
+    }
+    
+}
+#texto{
+    height: 850px;
+    font-family:Times;
+    color: white;
+    font-size: 16px;
+    
+
+}
+.faleconosco{
+    color: white;
+    font-family:Times;
+    font-size: 16px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+
+
+}
+.nome{
+    position: absolute;
+    left: 100px;
+    top:70px;
+
+}
+#caixausuario{
+    position: absolute;
+    left: 200px;
+}
+.mensagem{
+    position:absolute;
+    left:100px;
+    top: 120px;
+}
+#caixamensagem{
+    position: absolute;
+    top: 120px;
+    left:200px;
+}
+#enviar{
+    position:absolute;
+    top: 200px;
+    left:200px;
+}
+.rodapé{
+    width: 10000px;
+    position: absolute;
+    top: 700px;
+
+}
+#voltaraomenu{
+    height: 50px;
+    width: 120px;
+    color:white;
+    text-align: center;
+    border-radius: 12px;
+    background-color:#f3325a ;
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    
+}
+#voltaraomenu:hover{
+    box-shadow:20px 10px 10px black;
+}
+
+
+
+
+
+
+
+
+
+.Jogos{
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    top:100px;
+    left:580px;
+}
+.caixajogos{
+    background-color:#c4c0c0;
+    height: 300px ;
+    width: 300px;
+}
+
+@media screen and (max-width: 700px){
+    .j1{
+        background-color:#c4c0c0;
+        height: 150px;
+        width: 150px;
+        
+
+    }
+        
+}
+
+
+.caixadescricao{
+    background: #c4c0c098;
+    width: 300px;
+    text-align: center;
+    
+}
+@media screen and (max-width: 700px){
+     .j2{
+         background-color: #c4c0c098;
+         width:150px;
+
+     }
+}
+.caixadescricao:hover{
+    box-shadow:20px 10px 10px black;
+}
+    
+
+.AssassinScreed{
+    position: absolute;
+    left: 100px;
+    top: 180px;
+}
+@media screen and (max-width: 600px){
+    .um{
+        position: absolute;
+        float: left;
+        left:20px;
+        top: 80px;
+
+
+    }
+}
+    
+.Fortnite{
+    position: absolute;
+    left: 525px;
+    top: 180px;
+}
+@media screen  and (max-width: 600px){
+    .dois{
+        position: absolute;
+        left: 220px;
+        top: 80px;  
+    }
+}
+.GTA{
+    position: absolute;
+    right: 100px;
+    top: 180px;
+
+}
+@media screen and (max-width: 600px){
+    .tres{
+        position: absolute;
+        right: 20px;
+        top: 80px;
+    }
+}
+.Minecraft{
+    position: absolute;
+    left: 100px;
+    top: 600px;
+}
+@media screen and ( max-width: 600px){
+    .quatro{
+        position: absolute;
+        left: 20px;
+        top: 350px;
+    }
+}
+.Super{
+    position: absolute;
+    left: 525px;
+    top: 600px;
+}
+@media screen and ( max-width: 600px){
+    .cinco{
+        position: absolute;
+        left: 220px;
+        top: 350px;
+    }
+}
+.Halo{
+    position: absolute;
+    right: 100px;
+    top: 600px;
+}
+@media screen and (max-width: 600px){
+    .seis{
+        position: absolute;
+        right: 20px;
+        top: 350px; 
+    }
+}
+.Rayman{
+    position: absolute;
+    left: 100px;
+    top:1040px;
+}
+@media screen and (max-width: 600px){
+ .sete{
+    position: absolute;
+    left: 20px;
+    top: 600px; 
+ }
+}
+.RedDead{
+    position: absolute;
+    right:525px; 
+    top:1040px;
+}
+@media screen and (max-width: 600px){
+    .oito{
+        position: absolute;
+        left: 220px;
+        top: 600px;  
+    }
+}
+.Forza{
+    position: absolute;
+    right:100px;
+    top:1040px;
+}
+@media screen and (max-width: 600px){
+    .nove{
+        position: absolute;
+        right:20px;
+        top: 600px;  
+    }
+}
+
+.Corpo{
+    height: 1475px;
+}
+@media screen and (max-width: 600px){
+    .corpo2{
+        height:900px;
+
+    }
+}
+.Assassinsimg{
+    height: 250px;
+    width: 200px;
+    position:relative;
+    top:25px;
+    left: 50px;
+
+    
+}
+@media screen and (max-width: 600px){
+    .img1{
+        height: 130px;
+        width: 130px;
+        position:relative;
+        top:12px;
+        left: 10px;
+    
+    }
+}
+.imgFortnite{
+    height: 250px;
+    width: 200px;
+    position:relative;
+    top:25px;
+    left: 50px;
+}
+@media screen and (max-width: 600px){
+    .img2{
+        height: 130px;
+        width: 100px;
+        position:relative;
+        top:12px;
+        left: 25px;
+    
+    }
+}
+
+
+.imgGTA{
+    height: 200px;
+    width: 250px;
+    position:relative;
+    top:50px;
+    left: 25px; 
+}
+@media screen and (max-width: 600px){
+    .img3{
+        height: 100px;
+        width: 130px;
+        position:relative;
+        top:25px;
+        left: 10px;
+    
+    }
+}
+
+.imgMinecraft{
+    height: 250px;
+    width: 250px;
+    position:relative;
+    top:25px;
+    left: 25px; 
+}
+@media screen and (max-width: 600px){
+    .img5{
+        height: 130px;
+        width: 130px;
+        position:relative;
+        top:12px;
+        left: 10px;
+    
+    }
+}
+.imgSuper{
+    height: 250px;
+    width: 250px;
+    position:relative;
+    top:25px;
+    left: 25px; 
+}
+@media screen and (max-width: 600px){
+    .img6{
+        height: 130px;
+        width: 130px;
+        position:relative;
+        top:12px;
+        left: 10px;
+    
+    }
+}
+.imgHalo{
+    height: 250px;
+    width: 200px;
+    position:relative;
+    top:25px;
+    left: 50px;
+    }
+ @media screen and (max-width: 600px){
+    .img7{
+         height: 130px;
+         width: 100px;
+         position:relative;
+         top:12px;
+         left: 25px;
+        
+    }
+}
+.imgRayman{
+    height: 250px;
+    width: 250px;
+    position:relative;
+    top:25px;
+    left: 25px; 
+} 
+@media screen and (max-width: 600px){
+    .img8{
+        height: 130px;
+        width: 130px;
+        position:relative;
+        top:12px;
+        left: 10px;
+    
+    }
+}
+.imgRed{
+    height: 250px;
+    width: 200px;
+    position:relative;
+    top:25px;
+    left: 50px;
+}
+@media screen and (max-width: 600px){
+    .img9{
+        height: 130px;
+        width: 100px;
+        position:relative;
+        top:10px;
+        left: 25px;
+    
+    }
+}
+.imgForza{
+    height: 250px;
+    width: 250px;
+    position:relative;
+    top:25px;
+    left: 25px;
+}
+@media screen and (max-width: 600px){
+    .img10{
+        height: 130px;
+        width: 130px;
+        position:relative;
+        top:6px;
+        left: 10px;
+    
+    }
+}
+.descrição{
+    text-decoration: none;
+    
+}
+.irmenu{
+    background-color: #2D9BF0;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position:absolute;
+    top: 450px;
+    left:500px;
+}
+@media screen and (max-width: 600px){
+    .voltaMenu{
+        position:absolute;
+        top: 300px;
+        left:200px;
+    
+    }
+}
+
+.irmenu:hover{
+    width: 110px;
+    height: 60px;
+    box-shadow:20px 10px 10px black;
+}
+.escritairmenu{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+#capa{
+    background-color: #f3325a;
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    top: 130px;
+    left:300px;
+}
+.imgcapa{
+    height: 400px;
+    width: 450px;
+    position: relative;
+    left:120px ;
+    top: 50px;
+}
+.produto{
+    background: white;
+    width: 550px;
+    text-align: center;
+    position: absolute;
+    top: 600px;
+    left: 350px;
+
+}
+.car{
+    height:100px;
+}
+.imgcar{
+    height:50px;
+    width:50px;
+    opacity: 0.6;
+    position: absolute;
+    right: 370px;
+    top:598px;
+}
+.imgcar:hover{
+    height:60px;
+    width: 60px;
+}
+.caixaquant{
+    position: absolute;
+    top: 800px;
+    left:400px;
+    
+}
+.botao{
+    background-color:#777777;
+    height: 100px ;
+    width: 500px;
+    background-color: #00000090;
+}
+.quantidade{
+    color: white;
+    font-size: 35px;
+}
+.botao:hover{
+    box-shadow:20px 10px 10px black;
+}
+.escolhaqtd{
+    font-size: 20px;
+    background-color: #2D9BF0;
+    height: 40px;
+}
+.tabela{
+    background-color: #00000090;
+    color: white;
+    position: absolute;
+    top:950px;
+    
+}
+.tabela:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixadesconto{
+    background-color: #00000090;
+    height: 100px ;
+    width: 500px;
+    position:absolute;
+    top: 1200px;
+    left:50px;
+}
+.caixadesconto:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixadesconto .escrita{
+    color: white;
+    font-size: 35px;
+}
+#cupom{
+    font-size: 20px;
+    background-color: #2D9BF0;
+    height: 40px;
+}
+.caixafrete{
+    background-color:#00000090;
+    height: 100px ;
+    width: 500px;
+    position:absolute;
+    top: 1200px;
+    right:50px;
+}
+.caixafrete:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixafrete .escritafrete{
+    color: white;
+    font-size: 35px;
+}
+#frete{
+    font-size: 20px;
+    background-color: #2D9BF0;
+    height: 40px;
+   
+}
+#freteJogo{
+    background-color: #2D9BF0;
+    height: 40px;
+    width: 240px;
+}
+#verificarFrete{
+    position: relative;
+    left: 10px;
+}
+
+
+.caixavideo{
+    height: 200px;
+    position:absolute;
+    top:1350px;
+    left:500px;
+}
+.caixavideo:hover{
+    box-shadow:20px 10px 10px black;
+}
+
+
+.desc1{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 1300px;
+    left:100px;  
+}
+.secaojogo{
+    height: 2100px;
+}
+.descrição{
+    background-color:#c4c0c0;
+}
+.descriçãojogo{
+    height: 1500px;
+}
+.HRjogo{
+    border: 10px solid white;
+    width: 1350px;
+    position: absolute;
+    top: 1600px;
+}
+.opiniao{
+    color: white;
+    position: absolute;
+    left:100px;
+    top: 1680px;
+}
+.VOLTARxbox{
+    background-color: #2D9BF0;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position:absolute;
+    top: 2100px;
+    right:650px;
+}
+.VOLTARxbox:hover{
+    width: 110px;
+    height: 60px;
+    box-shadow:20px 10px 10px black;
+}
+
+
+.letralogin{
+    color: white;
+    font-size: 40px;
+    position:absolute;
+    left: 500px;
+    
+}
+.caixaemail{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 250px;
+    left:150px;
+    
+}
+.escritaemail{
+      color: white;
+      font-size: 30px;
+      position: relative;
+      left: 70px;
+      
+}
+
+.escrevaemail{
+    height: 40px;
+    width: 400px; 
+}
+.escrevaemail:hover{
+    box-shadow:20px 10px 10px black;
+}
+.senha{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 250px;
+    right: 300px;
+    
+}
+.letrasenha{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+      
+}
+#escrevasenha{
+    height: 40px;
+    width: 400px;
+}
+#escrevasenha:hover{
+    box-shadow:20px 10px 10px black;
+}
+.esqueci{
+    width: 300px;
+    color: white;
+    height:40px;
+    background-color: #f3325a;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+
+    
+
+}
+.esqueci:hover{
+    box-shadow:20px 10px 10px black;
+    border-radius: 12px;
+}
+.criar{
+    width: 300px;
+    color: white;
+    height:40px;
+    background-color: #f3325a;
+    position: absolute;
+    top: 400px;
+    right: 250px;
+}
+.criar:hover{
+    box-shadow:20px 10px 10px black;
+    border-radius: 12px;
+}
+.voltar{
+    background-color: #2D9BF0;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position:absolute;
+    top: 500px;
+    left:300px;
+
+}
+.voltar:hover{
+    box-shadow:20px 10px 10px black;
+}
+#continuar{
+    background-color:#F22652;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position:absolute;
+    top: 500px;
+    left:900px;
+}
+#continuar:hover{
+    width:110px;
+    height:60px;
+    box-shadow:20px 10px 10px black;
+}
+.login{
+    height: 500px; 
+
+
+}
+
+.letracriacao{
+    color: white;
+    font-size: 40px;
+    position:absolute;
+    left: 500px;
+}
+.caixanome{
+        width: 300px;
+        height: 80px;
+        background-color:#777777;
+        position: absolute;
+        top: 250px;
+        left:150px;
+        
+ }
+.escritanome{
+          color: white;
+          font-size: 30px;
+          position: relative;
+          left: 70px;
+          
+}
+#escrevanome{
+     height: 40px;
+    width: 400px;
+}
+#escrevanome:hover{
+    box-shadow:20px 10px 10px black;
+}
+.endereco{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 250px;
+    right: 300px;
+    
+}
+.letraendereço{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+      
+}
+#escrevaendereço{
+    height: 40px;
+    width: 400px;
+}
+#escrevaendereço:hover{
+    box-shadow:20px 10px 10px black;
+}
+.cep{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 380px;
+    right: 300px;
+    
+}
+.letracep{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+      
+}
+#escrevaCEPLogin{
+    height: 40px;
+    width: 400px;
+}
+#escrevaCEPLogin:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixaemail3{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 400px;
+    left:150px;
+    
+}
+.escritaemail3{
+      color: white;
+      font-size: 30px;
+      position: relative;
+      left: 70px;
+      
+}
+#escrevaemail3{
+    height: 40px;
+    width: 400px;
+}
+#escrevaemail3:hover{
+    box-shadow:20px 10px 10px black;
+}
+.criacao{
+    height: 500px;
+}
+
+.letraverificacao{
+    color: white;
+     font-size: 40px;
+     position:absolute;
+     left: 500px;
+
+}
+.caixanumero{
+    width: 500px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 250px;
+    left:300px;
+    
+}
+.escritanumero{
+      color: white;
+      font-size: 30px;
+      position: relative;
+      left: 70px;
+      
+}
+#escrevanumero{
+    height: 40px;
+    width: 400px;
+    position: relative;
+    left: 100px;
+    top:10px;
+}
+#escrevanumero:hover{
+    box-shadow:20px 10px 10px black;
+}
+.verificacao{
+    height: 500px;
+}
+#validarEmail{
+    background-color:#F22652;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position:absolute;
+    top: 250px;
+    left:600px;
+}
+#validarEmail:hover{
+    width:110px;
+    height:60px;
+    box-shadow:20px 10px 10px black;
+}
+
+
+
+
+
+
+
+.letracriacao{
+    color: white;
+    font-size: 40px;
+    position:absolute;
+    left: 500px;
+    
+}
+.caixasenha3{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 250px;
+    left:150px;
+    
+}
+.escritasenha3{
+      color: white;
+      font-size: 30px;
+      position: relative;
+      left: 70px;
+      
+}
+#escrevasenha3{
+    height: 40px;
+    width: 400px;
+}
+#escrevasenha3:hover{
+    box-shadow:20px 10px 10px black;
+}
+
+.letraconfirmacao{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 250px;
+    right: 300px;
+    
+}
+.escritasenhaconfirmacao{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+      
+}
+#escrevacaofirmacao{
+    height: 40px;
+    width: 400px;
+}
+#escrevacaofirmacao:hover{
+    box-shadow:20px 10px 10px black;
+}
+
+.voltar{
+    background-color: #2D9BF0;
+    width: 100px;
+    height: 50px;
+    position:absolute;
+    top: 500px;
+    left:300px;
+
+}
+.voltar:hover{
+    width:110px;
+    height:60px;
+    box-shadow:20px 10px 10px black;
+}
+#validar{
+    background-color:#F22652;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position:absolute;
+    top: 500px;
+    left:900px;
+}
+#validar:hover{
+    width:110px;
+    height:60px;
+    box-shadow:20px 10px 10px black;
+}
+.criacaosenha{
+    height: 500px; 
+}
+
+
+
+
+
+.letracarrinho{
+    color: white;
+    font-size: 40px;
+    position:absolute;
+    left: 500px;
+}
+.hrverif1{
+    background-color: #f3325a;
+    height: 45px;
+    width: 1326px;
+    position: absolute;
+    top:220px;
+}
+.caixacarrinho{
+    background-color:#c4c0c0;
+    height: 300px ;
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+.imgjogocarrinho{
+    height: 250px;
+    width: 250px;
+    position:relative;
+    top:25px;
+    left: 25px;
+}
+.caixaescritacarrinho{
+    background-color: #c4c0c0;
+    width: 400px;
+    position:absolute ;
+    top: 400px;
+    right: 200px;
+}
+.caixaescritacarrinho:hover{
+    box-shadow:20px 10px 10px black;
+}
+
+.escritajogocarrinho{
+    text-decoration: none;
+    position: relative;
+    left: 20px;
+}
+.inicio{
+    background-color:#F22652;
+    border-radius: 12px;
+    width: 100px;
+    height: 50px;
+    position:absolute;
+    top: 650px;
+    left:200px;
+    
+}
+
+.inicio:hover{
+    height: 60px;
+    width:110px;
+    box-shadow:20px 10px 10px black;
+
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.carrinho{
+    height: 1630px;
+}
+.footercarrinho{
+    height:100px;
+}
+.rodapécarrinho1{
+    position: absolute;
+    top:800px;
+    left:400px;
+}
+.rodapécarrinho2{
+    position: absolute;
+    top:850px;
+    left:580px;
+}
+
+
+
+
+
+
+
+
+.escritacompra{
+    color: white;
+    font-size: 60px;
+    position:absolute;
+    left: 500px;
+
+}
+.nomedojogo{
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    left:380px;
+    top:250px;
+}
+.escritanomejogo{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    font-size: 35px;
+    
+    
+}
+.titulometodo{
+    height:180px;
+}
+.metododecompra{
+    height: 80px;
+}
+.metodo{
+    background-color: #F22652;
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    left:420px;
+}
+
+.caixacartao{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 350px;
+    left:150px;
+    
+}
+#escritacartao{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+     
+}
+#escritacartao:hover{
+   color: #2D9BF0;
+}
+
+#escrevacartao{
+ height: 40px;
+ width: 400px;
+}
+#escrevacartao:hover{
+    box-shadow:20px 10px 10px black;
+}
+.caixaseguranca{
+width: 300px;
+height: 80px;
+background-color:#777777;
+position: absolute;
+top: 350px;
+right: 300px;
+
+}
+#escritaseguranca{
+color: white;
+font-size: 30px;
+position: relative;
+left: 70px;
+  
+}
+#escritaseguranca:hover{
+    color: #2D9BF0;
+}
+#escrevasegurancaa{
+height: 40px;
+width: 400px;
+}
+#escrevasegurancaa:hover{
+    box-shadow:20px 10px 10px black;
+}
+.vezes{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 750px;
+    left: 150px;
+}
+#x1{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:850px;
+    left: 150px;
+
+}
+
+#x1:hover{
+    background-color: #2D9BF0;
+}
+
+#x2{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:850px;
+    left: 580px;
+
+}
+
+#x2:hover{
+    background-color: #2D9BF0;
+}
+#x3{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:850px;
+    right: 150px;
+
+}
+
+#x3:hover{
+    background-color: #2D9BF0;
+}
+#x10{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:950px;
+    left: 350px;
+
+}
+
+#x10:hover{
+    background-color: #2D9BF0;
+}
+#x12{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:950px;
+    right: 350px;
+
+}
+
+#x12:hover{
+    background-color: #2D9BF0;
+}
+.entrega{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 750px;
+    left: 150px;
+}
+.loja{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:850px;
+    left: 350px;
+
+}
+.loja:active{
+    background-color: #2D9BF0;
+}
+.loja:hover{
+    background-color: #2D9BF0;
+}
+.endereçocasa{
+    background-color: #F22652;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top:850px;
+    right: 350px;
+
+}
+.endereçocasa:active{
+    background-color: #2D9BF0;
+}
+.endereçocasa:hover{
+    background-color: #2D9BF0;
+}
+#frete{
+    position: absolute;
+    top: 30px;
+    color: white;
+    left: 240px;
+}
+#frete:hover{
+    color: #2D9BF0;
+}
+#precototalComFrete{
+    position: absolute;
+    top: 30px;
+    color: white;
+    left: 270px;
+}
+#comprar{
+        background-color: #F22652;
+        width: 200px;
+        height: 80px;
+        position:absolute;
+        border-radius: 12px;
+        top: 1100px;
+        right:250px;
+    
+}
+#comprar:hover{
+    width:230px;
+    height:90px;
+    box-shadow:20px 10px 10px black;
+}
+#escrevaParcela{
+    color: white;
+    position:absolute;
+    top: 1000px;
+    right:250px;
+}
+#escrevaParcela:hover{
+    color: #2D9BF0;
+}
+.voltar2{
+        background-color: #2D9BF0;
+        width: 200px;
+        height: 80px;
+        border-radius: 12px;
+        position:absolute;
+        top: 1050px;
+        left:250px;
+    
+}
+.voltar2:hover{
+    width:230px;
+    height:90px;
+}
+.metododecompra{
+    height:1100px;
+}
+.rodapécompra1{
+    position: absolute;
+    top:1150px;
+    left:400px;
+}
+.rodapécompra2{
+    position: absolute;
+    top:1200px;
+    left:550px; 
+}
+
+
+
+.comprovante{
+    color:white;
+    position: absolute;
+    left: 400px;
+    font-size: 20px;
+}
+.realizada{
+     height: 380px;
+}
+.rodapé1comprovante{
+    position: absolute;
+    top:360px;
+    left:400px;
+}
+
+.rodapé2comprovaante{
+    position: absolute;
+    top:400px;
+    left:550px;
+}
+
+    .continue{
+        background-color: #2D9BF0;
+        width: 200px;
+        height: 80px;
+        border-radius: 12px;
+        position:absolute;
+        top: 200px;
+        right:250px;
+    
+}
+.continue:hover{
+    width:230px;
+    height:90px;
+}
+#carrinho{
+    
+    width: 800px;
+    height: 1000px;
+    right: 400px;
+    position: absolute;
+    top: 750px;
+    
+    
+}
+.nomep{
+    background-color: #13131331; 
+}
+.espaço{
+    background: #000000;
+}
+#letraNome{
+    position:relative;
+    left: 300px;
+}
+#letarpreco{
+    position:relative;
+    left: 280px;
+}
+
+#letraquantidade{
+    position:relative;
+    left: 320px;
+}
+header{
+    background-color: #00000090;
+}
+#produto{
+    background-color:#c4c0c0;
+    align-items: center;
+    justify-content: center;
+}
+#produto:hover{
+    box-shadow:20px 10px 10px black;
+}
+#complemento{
+    text-align: center;
+}
+#excluir{
+    align-items: center;
+    background-color: #f22652;
+    color: white;
+    border-radius: 12px;
+    width: 170px;
+    height: 60px;
+    text-align: center; 
+    
+    
+}
+#excluir:hover{
+    height: 80px;
+    color: black;
+    box-shadow:20px 10px 10px black;
+}
+#carrinhoHr{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    top:760px;
+}
+
+
+footer{
+    background-color: #00000090;
+
+}
+
+.redesFooter{
+    width: 5%;
+    height: 5%;
+    position: relative;
+    left: 280px;
+    top:40px;
+}
+.redesFooter:hover{
+    opacity: 0.3;
+}
+@media screen and (max-width: 600px){
+    .redes2{
+       position: relative;
+       left:100px;
+       top:-5px;
+    
+    }
+}
+#whatsapp{
+    color: white;
+    position: relative;
+    right: -780px;
+    top: -20px;
+}
+
+#footer{
+    color: white;
+    position: relative;
+    top:40px;
+    left: 320px;
+}
+#footer:hover{
+    color: #2D9BF0;
+}
+#relatarErro1{
+    color: white;
+}
+#relatarErro1:hover{
+   color: #2D9BF0;
+}
+.redes2{
+    width: 5%;
+    height: 5%;
+    position: relative;
+    left: center;
+    top:40px;
+}
+.redes2:hover{
+    opacity: 0.3;
+}
+#whatsapp2{
+    color: white;
+    position: relative;
+    right: -300px;
+    top: -20px;
+}
+#footer2{
+    color: white;
+    position: relative;
+    top:40px;
+    left: center;
+}
+#footer2:hover{
+    color: #2D9BF0;
+}
+#relatarErro{
+    position: absolute;
+    top:10px;
+}
+#relatarErro:hover{
+    color: #2D9BF0;
+}
+
+#total{
+    
+    background-color: #c4c0c0;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 1500px;
+    left:250px;
+}
+#total:hover{
+    box-shadow:20px 10px 10px black;
+}
+#pagar{
+    background-color: #F22652;
+    color:white;
+    border-radius: 12px;
+    width: 170px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    top:1540px;
+    right: -780px;
+}
+#precoCarrinho{
+    color:white;
+    position: relative;
+    top:70px;
+    right: -150px;
+}
+#pagar:hover{
+     height: 80px;
+     color: black;
+     box-shadow:20px 10px 10px black;
+    
+}
+#precoCarrinho:hover{
+    color: #2D9BF0;
+}
+#mostrarDesc{
+    position: relative;
+    left:130px;
+}
+#preçoTotalForza{
+    background-color:#F22652;
+    width: 190px;
+    height: 60px;
+    position: absolute;
+    top:1400px;
+    right: 110px;
+    border-radius: 12px;
+}
+#preçoTotalForza:hover{
+    box-shadow:20px 10px 10px black;
+}
+#verificarCartao{
+    background-color: #F22652;
+    color:white;
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    top:480px;
+    right:500px;
+}
+#verificarCartao:hover{
+    border-radius: 12px;
+    box-shadow:20px 10px 10px black;
+    color: #000000;
+}
+#validacaoCartaoCarrinho{
+    position: absolute;
+    top:480px;
+    left:500px;
+}
+#validacaoCartaoCarrinho:hover{
+    color:#2D9BF0;
+}
+#verificaçãoComentário{
+    position: relative;
+    left: 630px;
+    top: -110px;
+}
+#caixaMostrarComentario{
+    background-color:#c4c0c0;
+    color: #000000;
+    text-align: center;
+    width: 900px; 
+    height: -200px;
+    position: relative;
+    left: -210px;
+}
+#caixaMostrarComentario:hover{
+    box-shadow:20px 10px 10px black; 
+}
+
+    
+
+#excluirComentario{
+    background-color: #F22652;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left: -160px;
+}
+#excluirComentario:hover{
+    box-shadow:20px 10px 10px black;
+    border-radius: 12px;
+}
+#verificaçãoComentário2{
+    position: relative;
+    left: 600px;
+    top: -240px;
+}
+#opiniaodoproduto{
+    text-align: center;
+}
+#caixaAdicionar2{
+    background-color:#00000009;
+    width: 380px;
+    position: relative;
+    left: -25px;
+    text-align: center;
+}
+
+#criar{
+    background-color: #F22652;
+    height:50px;
+    width: 120px;
+    position: absolute;
+    left: 890px;
+    top: 380px;
+}
+#criar:hover{
+    box-shadow:20px 10px 10px black;
+    border-radius: 12px
+}
+#entrega{
+    position: absolute;
+    top:500px;
+}
+.caixaCupom{
+    width: 300px;
+    height: 80px;
+    background-color:#777777;
+    position: absolute;
+    top: 500px;
+    left:450px;
+}
+#escritacupom{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+      
+    }
+#escritacupom:hover{
+    color: #2D9BF0;
+    }
+#escrevaCupom{
+    height: 40px;
+    width: 400px;
+}
+#escrevaCupom:hover{
+        box-shadow:20px 10px 10px black;
+}
+.caixaEntrega{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 620px;
+    left: 470px;
+
+}
+#loja{
+    background-color: #F22652;
+    width: 180px;
+    height: 50px;
+    position: relative;
+    left: -100px;
+}
+#loja:hover{
+    background-color: #2D9BF0;
+    box-shadow:20px 10px 10px black;
+    border-radius: 12px;
+}
+#casa{
+    background-color: #F22652;
+    width: 180px;
+    height: 50px;
+    position:relative ;
+    left: 100px;
+}
+#casa:hover{
+    background-color: #2D9BF0;
+    box-shadow:20px 10px 10px black;
+    border-radius: 12px;
+}
+#escritaentrega{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left:-10px;
+      
+    }
+#escritaentrega:hover{
+    color: #2D9BF0;
+    
+}
+.caixaEntrega{
+    width: 560px;
+    height: 200px;
+    background-color:#777777;
+    position: absolute;
+    top: 670px;
+    left:370px;
+}
+#EscritaprecoCarrinho{
+    position: absolute;
+    top: 880px;
+    color: white;
+}
+#EscritaprecoCarrinho:hover{
+    color: #2D9BF0;
+}
+#precoCarrinho{
+    position: absolute;
+    top: 880px;
+    left:290px;
+
+}
+#precoCarrinho:hover{
+   color: #2D9BF0;
+}
+#edicaoexclusiva{
+    color: white;
+    position: absolute;
+    top: 220px;
+    left: 530px;
+}
+
+.opiniao{
+    background-color: #00000090;
+    width: 1330px;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    color:white;
+    height: 400px;
+    
+}
+.comentarios{
+    color: white;
+    position: absolute;
+    top:350px;
+    left: 200px;
+}
+.erroProduto{
+    color: white;
+    position: absolute;
+    top:350px;
+    left: 700px;
+}
+.comentarios:hover{
+     color:#2D9BF0
+}
+.erroProduto:hover{
+    color:#2D9BF0
+} 
+#nenhumComentário{
+    position: relative;
+    left:-600px;
+}
+#msgNome , #msgEndereco , #MsgEmail , #msgCep , #msgCriarSenha , #msgComfereSenha , #msgEnviadaEmail , #msgLoginNome , #msgLoginSenha{
+    color: white;
+}
+#msgNome:hover , #msgEndereco:hover , #MsgEmail:hover , #msgCep:hover , #msgCriarSenha:hover , #msgComfereSenha:hover , #msgEnviadaEmail:hover , #msgLoginNome:hover , #msgLoginSenha:hover{
+    color: #2D9BF0;
+}
+#caixaMostrarMais{
+    background-color: #00000090;
+    width: 1300px;
+    height: 50px;
+    position: relative;
+    left: -612px;
+    text-align: center;
+    top:300px;
+    
+
+    
+}
+#escritaVermaisSeusComentario , #relatarErro{
+    color: white;
+    text-decoration: none;
+    font-family:Times;
+    font-size: 18px;
+    position: relative;
+    top: 15px;
+}
+#escritaVermaisSeusComentario:hover , #relatarErro:hover{
+    color:#2D9BF0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+
+
+  
