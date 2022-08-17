@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forza Horizon 5//Game_Mania</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class = "menu">
+            <img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo">
+            <div class="logo"><p class="Game_Mania">Game_Mania</p></div>
+            <form class="pesquisa" action="action_page.php">
+                 <input class="pesquisa" type="text" placeholder="Pesquisa" name="search">
+                
+            </form>
+            <a class="link_carrinho"href="carrinho.html">Meu carrinho!</a>
+            <img class="img_usuario" src="IMG/fotousuario.png" alt="foto do usuario"  width = "5%">
+            <a  class="link_login"href="login1.html">Login in</a>
+        </nav>
+    </header>
+    <section class="secaojogo">
+        <article class="descriçãojogo">
+            <div id="capa">
+                    <img class="imgcapa" src="IMG/ForzaHorizon5.jpg" alt="Forza Horizon 5">
+            </div>
+            <div class="produto">
+                    <h1 id="nomeproduto">Forza Forza Horizon 5/Edição Exclusiva</h1>
+                    <h1 id="preco">120,00</h1>
+            </div>
+            <div class="car">
+                <a href="carrinho.html">
+                    <img class="imgcar" src="IMG/Carrinho.png" alt="Carrinho" width="2%">
+                </a>
+            </div>
+            <div class="caixaquant">
+                <button class="botao">
+                   <label class="quantidade" for="number">Quantidade: </label>
+                   <input id="escolhaqtd" type="number">
+            </button>
+            </div><!--Informar a quantidade do produto;sem maxlenght-->
+            <div>
+                <table class="tabela" style="border: 2px solid black; padding: 3px">
+                    <thead>
+                        <tr style="background-color: #cccccc; border:1px">
+                            <th style="border: 1px solid grey; padding: 5px">Boleto</th>
+                            <th style="border: 1px solid grey; padding: 5px">Pix</th>
+                            <th style="border: 1px solid grey; padding: 5px">Cartão de crédito </th>
+                            <th style="border: 1px solid grey; padding: 5px">Cartão de debito</th>
+                            <th style="border: 1px solid grey; padding: 5px">Pag Seguro</th>
+                            <th>Mercado Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                        </tr>
+                        <tr>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                        </tr>
+                        <tr>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            </tr>
+                            <tr>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                            </tr>
+                            <tr>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                            </tr>
+                            <tr>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="caixadesconto">
+                <label class=" escrita" for="number and text">Cupom de desconto: </label>
+                <input id="cupom" type="number" maxlength="10">
+                <input id="verificarDesconto" type="button" value="verificar desconto!"onclick="verificarCupom(document.getElementById('cupom').value,1)">
+                <br><div id="mostrarDesconto"></div>
+            </div><!--Informar o cupom de desconto;sem maxlenght-->
+            <div class="caixafrete">
+                <label class="escritafrete" for="number">Calcular frete: </label>
+                <br>
+                <input id="freteJogo" type="number" placeholder="CEP" maxlength="8">
+                <input id="verificarFrete" type="button" value="calcular CEP!"onclick="verificarCEP(document.getElementById('freteJogo').value,1)" >
+                <br><div id="mostrarFrete"></div>
+            </div>
+            <div class="caixavideo">
+                <video width="320" height="240" controls>
+                    <source src="IMG/amostra.mp4">
+                </video>
+            </div>
+            <div>
+                
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle desc1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Descrição:
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">
+                    <p>Marca: Microsoft</p>
+                    <p> Sistema operacional: Xbox Serie X</p>
+                    <p> Plataforma de hardware: Xbox Series X</p>
+                    <p> Formato	Blu-ray</p>
+                    <p> Gênero:Corrida</p>
+                    <p> Sobre este item:</p>
+                    <p> Compatível com Xbox One ou Xbox Series X</p>
+                    <p> Sua Aventura Definitiva de Horizon o aguarda,</p>
+                    <p>explore as paisagens do mundo aberto vibrante e em constante </p>
+                    <p> evolução do México, com uma ação de direção divertida e ilimitada</p>
+                    <p> em centenas dos melhores carros do mundo</p></a></li>
+                  
+                </ul>
+                <input id="preçoTotalForza" type="button" value="Adicionar ao carrinho! " onclick="
+                addCarrinho(
+                    document.getElementById('nomeproduto').textContent, //nome
+                    document.getElementById('preco').textContent, //preco
+                    document.getElementById('escolhaqtd').value,
+                    5)">
+                    
+              </div>
+              <div >
+                <p id="mostrarPreco"></p>
+                <p id="desconto"></p>
+              </div>
+        </article>
+        <article class="opiniao">
+            <hr>
+            <h2 id="opiniaodoproduto">Opinião do Produto:</h2>
+            <div id="caixaAdicionar2">
+                <div>
+                    <h2>Adicionar comentário: </h2>
+                    <label for="name">Assunto:</label>
+                    <input type="text" id="nome2">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem2"  type="text" rows="5" cols="20" maxlength="200" minlength="2"  required autocomplete></textarea>
+                </div>
+                <div>
+                    <input id="enviar2" type="button" value="enviar!" onclick="addComentario(
+                        document.getElementById('nome2').value,
+                        document.getElementById('mensagem2').value,
+                        1)">
+                </div>
+            </div>
+            <div id="verificaçãoComentário2"></div>
+            <div class="maisComentarioProduto">
+                <h5 class="quadradoComentario"><a class="comentarios" href="comentarios.html">Ver todos comentarios do produto em outra página</a><a class="erroProduto" href="relatarErroProduto.html">|Relatar erro do produto</a></h5>
+            </div>
+        </article><!--enviar uma opinião-->
+    </section>
+    <section>
+        <div>
+            <button class="VOLTARxbox" onclick="Alert"><a href ="xbox.html">voltar</a></button>
+        </div>
+    </section>
+    <footer>
+        <div id="footer"><h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil <a href="relatarErro.html">|Relatar erro</a></h3></div>
+        <a href="https://www.instagram.com/">
+            <img class="redesFooter" src="IMG/instagram.png">
+        </a>
+        <a href="https://www.twitter.com/">
+            <img class="redesFooter" src="IMG/twitter.png">
+        </a>
+        <a href="https://www.tiktok.com/">
+            <img class="redesFooter" src="IMG/tiktok.png">
+        </a>
+        <a href="https://www.facebook.com/">
+            <img class="redesFooter" src="IMG/facebok.webp">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img class="redesFooter" src="IMG/linkedin.png">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img class="redesFooter" src="IMG/youtube.png">
+        </a>
+        <a href="https://www.whatsapp.com/">
+            <img class="redesFooter" src="IMG/whatsapp.webp">
+            <h2 id="whatsapp">(47)996954527</h2>
+        </a>
+    </footer>
+   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+<script src="JS/carrinho.js"></script>
+<script src="JS/jogo.js"></script>
+<script src="JS/comentarJogo.js"></script>
+</html>
