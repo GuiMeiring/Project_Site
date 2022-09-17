@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta//Game_Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo1">
+                    <img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo">
+                     <div class="logo">
+                         <p class="Game_Mania">Game_Mania</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo2">
+                    <form class="pesquisa" action="action_page.php">
+                        <input class="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa">
+                    </form>
+                    <button class="btn btn-outline-danger botaoMenu "name="menu usuário">Menu Usuário</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class=" offset-md-7 col-md-5 offset-sm-2 col-sm-10  offset-xs-2 col-xs-10 menuRespo">
+                <div id="caixaMenu">
+                    <div id="fotoUsuário"></div>
+                    <div id="Login"></div>
+                    <div id="fotoCarrinho"></div>
+                    <div id="Carrinho"></div>
+                    <div id="Sair"></div>
+                    <div id="RelatarErro"></div>
+                    <div id="fotoRelatar"></div>
+                    <div id="Configuração"></div>
+                    <div id="fotoConfiguracao"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <form  return action="criaçãosenha.html">
+            <div class="jumbotron text-center titulo">
+                <h1 id="letraCriacao">Criação de Conta:</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-10 col-xs-10 coluna">
+                        <label class=" escritanome"for="name">Informe seu nome completo:</label>
+                        <input id="escrevanome" type="name"placeholder="Nome e sobrenome"  for="name" name="name" minlength="7" maxlength="40" required>
+                        <div id="TrueNomeCriacao"></div>
+                        <div id="FalseNomeCriacao"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgContaCriacao1"></div>
+                    <div class="offset-md-1 col-md-5 col-sm-10 col-xs-10 coluna">
+                        <label class="escritaemail3" for="email">Informe seu e-mail:</label>
+                        <input id="escrevaemail3" placeholder="exemplo@gmail.com" type="email" for="email" name="email" maxlength="40" required>
+                        <div id="TrueEmailCriacao"></div>
+                        <div id="FalseEmailCriacao"></div>
+                    </div><!--adicionar e-mail;possivel com com o "@"-->
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgContaCriacao2"></div>
+                <div class="row"></div>
+                    <div class=" offset-md-4 col-md-4 col-sm-10 col-xs-10 coluna">
+                        <label class="escritaCPF">Informe seu CPF: </label>
+                        <input id="escrevaCPF" for="cpf" name="cpf"  placeholder="123.456.789-12" required>
+                        <div id="TrueCPFCriacao"></div>
+                        <div id="FalseCPFCriacao"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgContaCriacao3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6 botaoResp ">
+                        <button class="voltar"><a href="paginaInicial.html">Voltar</a></button> 
+                    </div>
+                    <div class="col-6 botaoResp">
+                        <input type="submit" id="validarCriacao" value="validar!">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footerRespo">
+                    <div id="footer">
+                        <h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil 
+                            <a href="relatarErro.html">|Relatar erro</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 footerRespo">
+                    <a href="https://www.instagram.com/">
+                        <img class="redesFooter" src="IMG/instagram.png">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img class="redesFooter" src="IMG/twitter.png">
+                    </a>
+                    <a href="https://www.tiktok.com/">
+                        <img class="redesFooter" src="IMG/tiktok.png">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img class="redesFooter" src="IMG/facebok.webp">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img class="redesFooter" src="IMG/linkedin.png">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img class="redesFooter" src="IMG/youtube.png">
+                    </a>
+                    <a href="https://www.whatsapp.com/">
+                        <img class="redesFooter" src="IMG/whatsapp.webp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="JS/conta.js"></script>
+<script src="JS/basico.js"></script>
+</html>

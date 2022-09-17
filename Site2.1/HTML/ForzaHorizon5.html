@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forza Horizon 5//Game_Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo1">
+                        <img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo">
+                        <div class="logo">
+                            <p class="Game_Mania">Game_Mania</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo2">
+                        <form class="pesquisa" action="action_page.php">
+                            <input class="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa">
+                        </form>
+                        <button class="btn btn-outline-danger botaoMenu "name="menu usuário">Menu Usuário</button>
+                    </div>
+                </div>
+            </div>
+    </header>
+        <div class="container">
+            <div class="row">
+                <div class=" offset-md-7 col-md-5 offset-sm-2 col-sm-10  offset-xs-2 col-xs-10 menuRespo">
+                    <div id="caixaMenu">
+                        <div id="fotoUsuário"></div>
+                        <div id="Login"></div>
+                        <div id="fotoCarrinho"></div>
+                        <div id="Carrinho"></div>
+                        <div id="Sair"></div>
+                        <div id="RelatarErro"></div>
+                        <div id="fotoRelatar"></div>
+                        <div id="Configuração"></div>
+                        <div id="fotoConfiguracao"></div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="secaojogo">
+       <div class="jumbotron text-center titulo">
+            <h1 d="nomeproduto">Forza Forza Horizon 5/Edição Exclusiva</h1>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 capa">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5 colImg">
+                                <img class="imgcapa" src="IMG/ForzaHorizon5.png" alt="Forza Horizon 5">
+                            </div>
+                            <div class="col-md-7 colDescricao">
+                                <h4><br>Desenvolvedora: Playground Games<br>Publicadora: Microsoft Studios<br>Distribuidora: Microsoft<br>Plataforma(s): Xbox One, Xbox Series X|S<br>Gênero: Corrida<br>Modos de jogo:	Um jogador, Multijogador.<br>Pilote diversos dos melhores carros do mundo em corridas fantásticas e expedições incríveis dentro de um vibrante mundo aberto cheio de selvas, cidades históricas e ruínas ocultas nas terras mexicanas.</h4>
+                                <h1 id="preco">120,00</h1>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="offset-md-3 col-md-3 col-xs-6 col-addCarinho">
+                    <div class="input-group">
+                        <input type="number"id="quant"  required class="input">
+                        <label for="name" class="input-label">Quantidade</label>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-addCarinho">
+                   <a href="carrinho.html"><input id="preçoTotalForza" type="button"onclick="
+                    addCarrinho(
+                        document.getElementById('nomeproduto').textContent, //nome
+                        document.getElementById('preco').textContent, //preco
+                        document.getElementById('escolhaqtd').value,
+                        14)"> <img class="imgcar" src="IMG/carrinho.png" alt="Botao para adicionar ao carrinho" ></a> 
+                </div>
+            </div>
+        </div>
+        
+            <div>
+                <table class="tabela" style="border: 2px solid black; padding: 3px">
+                    <thead>
+                        <tr style="background-color: #cccccc; border:1px">
+                            <th style="border: 1px solid grey; padding: 5px">Boleto</th>
+                            <th style="border: 1px solid grey; padding: 5px">Pix</th>
+                            <th style="border: 1px solid grey; padding: 5px">Cartão de crédito </th>
+                            <th style="border: 1px solid grey; padding: 5px">Cartão de debito</th>
+                            <th style="border: 1px solid grey; padding: 5px">Pag Seguro</th>
+                            <th>Mercado Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                            <td>A vista por R$120.00,sem juros</td>
+                        </tr>
+                        <tr>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                            <td>2x de R$60,00,sem juros</td>
+                        </tr>
+                        <tr>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            <td>3x de R$40,00,sem juros</td>
+                            </tr>
+                            <tr>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                                <td>5x de R$24,00,sem juros</td>
+                            </tr>
+                            <tr>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                                <td>10x de R$12,00,sem juros</td>
+                            </tr>
+                            <tr>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                                <td>12x de R$10,00,sem juros</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="caixavideo">
+                <video width="320" height="240" controls>
+                    <source src="IMG/amostra.mp4">
+                </video>
+            </div>
+            <input id="preçoTotalForza" type="button" value="Adicionar ao carrinho! " onclick="
+                addCarrinho(
+                    document.getElementById('nomeproduto').textContent, //nome
+                    document.getElementById('preco').textContent, //preco
+                    document.getElementById('escolhaqtd').value,
+                    14)">
+                    
+              </div>
+              <div >
+                <p id="mostrarPreco"></p>
+                <p id="desconto"></p>
+              </div>
+        </article>
+        <article class="opiniao">
+            <hr>
+            <h2 id="opiniaodoproduto">Opinião do Produto:</h2>
+            <div id="caixaAdicionar2">
+                <div>
+                    <h2>Adicionar comentário: </h2>
+                    <label for="name">Assunto:</label>
+                    <input type="text" id="nome2">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem2"  type="text" rows="5" cols="20" maxlength="200" minlength="2"  required autocomplete></textarea>
+                </div>
+                <div>
+                    <input id="enviar2" type="button" value="enviar!" onclick="addComentario(
+                        document.getElementById('nome2').value,
+                        document.getElementById('mensagem2').value,
+                        1)">
+                </div>
+            </div>
+            <div id="verificaçãoComentário2"></div>
+            <div class="maisComentarioProduto">
+                <h5 class="quadradoComentario"><a class="comentarios" href="comentarios.html">Ver todos comentarios do produto em outra página</a><a class="erroProduto" href="relatarErroProduto.html">|Relatar erro do produto</a></h5>
+            </div>
+        </article><!--enviar uma opinião-->
+    </section>
+    <section>
+        <div>
+            <button class="VOLTARxbox" onclick="Alert"><a href ="xbox.html">voltar</a></button>
+        </div>
+    </section>
+    <footer>
+        <div id="footer"><h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil <a href="relatarErro.html">|Relatar erro</a></h3></div>
+        <a href="https://www.instagram.com/">
+            <img class="redesFooter" src="IMG/instagram.png">
+        </a>
+        <a href="https://www.twitter.com/">
+            <img class="redesFooter" src="IMG/twitter.png">
+        </a>
+        <a href="https://www.tiktok.com/">
+            <img class="redesFooter" src="IMG/tiktok.png">
+        </a>
+        <a href="https://www.facebook.com/">
+            <img class="redesFooter" src="IMG/facebok.webp">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img class="redesFooter" src="IMG/linkedin.png">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img class="redesFooter" src="IMG/youtube.png">
+        </a>
+        <a href="https://www.whatsapp.com/">
+            <img class="redesFooter" src="IMG/whatsapp.webp">
+            <h2 id="whatsapp">(47)996954527</h2>
+        </a>
+    </footer>
+   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+<script src="JS/carrinho.js"></script>
+<script src="JS/jogo.js"></script>
+<script src="JS/comentarJogo.js"></script>
+</html>

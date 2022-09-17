@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu//Game_Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body id="topo">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo1">
+                    <img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo">
+                     <div class="logo">
+                         <p class="Game_Mania">Game_Mania</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo2">
+                    <form class="pesquisa" action="action_page.php">
+                        <input class="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa">
+                    </form>
+                    <button class="btn btn-outline-danger botaoMenu "name="menu usuário">Menu Usuário</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class=" offset-md-7 col-md-5 offset-sm-2 col-sm-10  offset-xs-2 col-xs-10 menuRespo">
+                <div id="caixaMenu">
+                    <div id="fotoUsuário"></div>
+                    <div id="Login"></div>
+                    <div id="fotoCarrinho"></div>
+                    <div id="Carrinho"></div>
+                    <div id="Sair"></div>
+                    <div id="RelatarErro"></div>
+                    <div id="fotoRelatar"></div>
+                    <div id="Configuração"></div>
+                    <div id="fotoConfiguracao"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="menuprincipal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-md-0 col-md-3 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8 colunaDropdown">
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <a href='#PROM'><button type="button" class="btn btn-dark buttonSection">Promoções</button></a>
+                        <a href='#PS'><button type="button" class="btn btn-dark buttonSection">Playstation</button></a>
+                        <a href='#XB'><button type="button" class="btn btn-dark buttonSection">Xbox</button></a>
+                        <a href='#PC'><button type="button" class="btn btn-dark buttonSection">PC</button></a>
+                        <a href='#CG'><button type="button" class="btn btn-dark buttonSection">Cadeira Gamer</button></a>
+                      </div>
+                </div>
+                <div class="offset-md-1 col-md-4 col-sm-12 col-xs-12 colunaMenu">
+                    <div class="Titulo">
+                        <h1>Bem Vindo!</h1>
+                         <p>Loja especializada em vendas de</p>
+                         <p>games localizada no centro de </p>
+                         <p>São Paulo, sempre buscando a melhor </p>  
+                         <p>experiência aos seus usuários.</p>
+                     </div>
+                     <button class= "botaosobre"><a href="um pouco sobre nós.html">Sobre</a></button> 
+                </div>
+                <div  class="offset-md-0 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaMenu">
+                    <img class="img_texto" src="IMG/game.png" alt="logodotexto">
+                </div>
+
+            </div>
+            <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner promocoes">
+                          <div class="carousel-item active">
+                            <img src="IMG/promoção.PNG" class="d-block w-100" alt="promoção1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="IMG/promoção2.jpg" class="d-block w-100" alt="promoção2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="IMG/promoção3.jpg" class="d-block w-100" alt="promoção3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+            </div>
+            <section id="PROM">
+            <div class="row">
+                <div class="jumbotron text-center">
+                    <h1 class="promoção">Promoções do Dia! </h1>
+                </div>
+                <div class="offset-md-1 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
+                    <div class="caixaPromoção1"><a href="xboxseriex.html"></a>
+                        <img class="imgPromoção" src= "IMG/xboxseriex.png">
+                    </div>
+                    <div class="preçoPromoção1">
+                        <h3 id="p1nome">Xbox Series X</h3>
+                        <h4>R$</h4>
+                        <h4 id="p1preco">4888,99</h4>
+                        <input type="text" id="p1quantidade">
+                        <input type="button" value="Adicionar ao carrinho!" onclick="
+                         addCarrinho(
+                            document.getElementById('p1nome').textContent, //nome
+                            document.getElementById('p1preco').textContent, //preco
+                            document.getElementById('p1quantidade').value,
+                           //quantidade
+                        1)"> 
+                     </div>
+                </div>
+                <div class="offset-md-2 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
+                    <div class="caixaPromoção2">
+                         <img class="imgPromoção" src="IMG/playstation5.webp">
+                    </div>
+                    <div class="preçoPromoção2">
+                        <h3 id="p2nome">Playstation 5</h3>
+                        <h4>R$</h4>
+                        <h4 id="p2preco">4561,98</h4>
+                        <input type="text" id="p2quantidade">
+                        <input type="button" value="Adicionar ao carrinho!" onclick="
+                        addCarrinho(
+                            document.getElementById('p2nome').textContent, //nome
+                            document.getElementById('p2preco').textContent, //preco
+                            document.getElementById('p2quantidade').value, //quantidade
+                        2)"> <!-- quantos elementos foram adiconados -->
+                    </div>
+                </div>
+            </div>
+            </section>
+            
+            <div class="row">
+                <div class="offset-md-1 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
+                    <div class="caixaPromoção3">
+                        <img class= "imgPromoção" src="IMG/BattlefieldV.png">
+                    </div>
+                    <div class="preçoPromoção3">
+                        <h3 id="p3nome">Battlefield V</h3>
+                        <h4>R$</h4>
+                        <h4 id="p3preco">173,90</h4>
+                        <input type="text" id="p3quantidade">
+                        <input type="button" value="Adicionar ao carrinho!" onclick="
+                        addCarrinho(
+                            document.getElementById('p3nome').textContent, //nome
+                            document.getElementById('p3preco').textContent, //preco
+                            document.getElementById('p3quantidade').value, //quantidade
+                            3)"> <!-- quantos elementos foram adiconados -->
+                    </div>
+                </div>
+                <div class="offset-med-2 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
+                    <div class="caixaPromoção4">
+                        <img class="imgPromoção"src="IMG/AssasnsCreedValhalla.webp">
+                    </div>
+                    <div class="preçoPromoção4">
+                        <h3 id="p4nome">Assassin's Creed Valhalla</h3>
+                        <h4>R$</h4>
+                        <h4 id="p4preco">157,00</h4>
+                        <input type="text" id="p4quantidade">
+                        <input type="button" value="Adicionar ao carrinho!" onclick="
+                        addCarrinho(
+                            document.getElementById('p4nome').textContent, //nome
+                            document.getElementById('p4preco').textContent, //preco
+                            document.getElementById('p4quantidade').value, //quantidade
+                            4)"><!-- quantos elementos foram adiconados -->
+                    </div>
+                </div>
+                
+                            
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="page-section" id="PS">
+        <div class="container PS">
+            <h2 class="section-heading text-center">Console Playstation</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-8 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPS" src="IMG/playstation5.webp">
+                        </div>
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5 id="p5nome">Playstation 5</h5>
+                            <p>R$ <span id="p5preco">4561,98</span></p>
+                            <input type="text" class="qtd" id="p5quantidade">
+                            <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
+                            document.getElementById('p5nome').textContent, //nome
+                            document.getElementById('p5preco').textContent, //preco
+                            document.getElementById('p5quantidade').value, //quantidade
+                            5)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPS" src="IMG/Playstation4.webp">
+                        </div>
+                        <div  class="col-lg-12 divDec text-center">
+                           <br>
+                           <h5>Playstation 4</h5>
+                           <p>R$ 2999,99</p>
+                           <br>
+                           <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPS" src="IMG/controleps4.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Controle de Playstation 4</h5>
+                            <p>R$ 299,00</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPS" src="IMG/controleps5.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Controle de Playstation 5 </h5>
+                            <p>R$ 449,00</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPS">Mais!</button>
+                    <a href='#topo'>
+                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
+                    </a>
+                </div>
+                <div id="loadingPS"></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </section>
+    <section class="page-section" id="XB">
+        <div class="container XB">
+            <h2 class="section-heading text-center">Console Xbox</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgXB" src="IMG/xboxseriex.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5 id="p6nome">Xbox Serie X</h5>
+                            <p id="p6preco">R$ <span id="p6preco">4561,98</span></p>
+                            <input type="text" class="qtd" placeholder="Quantidade" id="p6quantidade">
+                            <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
+                            document.getElementById('p6nome').textContent, //nome
+                            document.getElementById('p6preco').textContent, //preco
+                            document.getElementById('p6quantidade').value, //quantidade
+                            6)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgXB" src="IMG/controleXbox.png">
+                        </div>
+                        <div class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Controle Xbox One</h5>
+                            <p>R$ 200,90</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgXB" src="IMG/XboxSerieS.png">
+                        </div>
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Xbox Serie S</h5>
+                            <p>2169,00</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgXB" src="IMG//controleXbox360.png">
+                        </div>
+                        <div class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Controle Xbox 360</h5>
+                            <p>R$ 118,98</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonXB">Mais!</button>
+                    <a href='#topo'>
+                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
+                    </a>
+                </div>
+                <div id="loadingXB"></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </section>
+    <section class="page-section" id="PC">
+        <div class="container PC">
+            <h2 class="section-heading text-center">PC</h2>
+            <br>
+            <div class="row">
+                <div class=" col-lg-2  col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPC" src="IMG/PCGamer.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5 id="p7nome">PC Gamer ITX Arena Setup Powered By Asus</h5>
+                            <p>R$ <span id="p7preco">4999,00</span></p>
+                            <input type="text" class="qtd" placeholder="Quantidade" id="p7quantidade">
+                            <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
+                            document.getElementById('p7nome').textContent, //nome
+                            document.getElementById('p7preco').textContent, //preco
+                            document.getElementById('p7quantidade').value, //quantidade
+                            7)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPC" src="IMG/RTX.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                           <h5>Placa de Vídeo NVIDIA GeForce RTX 2060 Super Galax</h5>
+                           <p>R$ 2295,00 </p>
+                           <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPC" src="IMG/MonitorGamer.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Monitor Gamer Alienware Curvo QD-OLED de 34 polegada</h5>
+                            <p>R$ 10998,00</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgPC" src="IMG/MousePad.png">
+                        </div>
+                        <div class="col-lg-12 divDec text-center">
+                            <br>
+                           <h5>Mousepad Gamer HyperX Fury Ultra, RGB, (360x300mm)</h4>
+                           <p>R$ 219,99</p>
+                           <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPC">Mais!</button>
+                    <a href='#topo'>
+                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
+                    </a>
+                </div>
+                <div id="loadingPC"></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    <section class="page-section" id="CG">
+        <div class="container  CG">
+            <h2 class="section-heading text-center">Cadeira Gamer</h2>
+            <br>
+            <div class="row">
+                <div class=" col-lg-2  col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgCG" src="IMG/CadeiraGamer1.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5 id="p8nome">Cadeira Gamer Roxtor Warrior Dourada</h5>
+                            <p>R$ <span id="p8preco">4999,00</span></p>
+                            <input type="text" class="qtd" placeholder="Quantidade" id="p8quantidade">
+                            <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
+                            document.getElementById('p8nome').textContent, //nome
+                            document.getElementById('p8preco').textContent, //preco
+                            document.getElementById('p8quantidade').value, //quantidade
+                            8)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgCG" src="IMG/CadeiraGamer2.png">
+                        </div>
+                        
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Cadeira Gamer Roxtor Warrior Verde Claro e Preto</h5>
+                            <p>R$ 899,90</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgCG" src="IMG/CadeiraGamer3.png">
+                        </div>
+                        <div  class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>ThunderX3 Cadeira GamerT GC12 Preta/Azul</h5>
+                            <p>R$ 1299,99</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
+                    <div class="row">
+                        <div class="col-lg-12 divPro">
+                            <img class="imgCG" src="IMG/CadeiraGamer4.png">
+                        </div>
+                        <div class="col-lg-12 divDec text-center">
+                            <br>
+                            <h5>Cadeira Gamer Premium, CGR-01 Preto/Verde</h5>
+                            <p>R$ 899,90</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonCG">Mais!</button>
+                    <a href='#topo'>
+                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
+                    </a>
+                </div>
+                <div id="loadingCG"></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </section>
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footerRespo">
+                    <div id="footer">
+                        <h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil 
+                            <a href="relatarErro.html">|Relatar erro</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 footerRespo">
+                    <a href="https://www.instagram.com/">
+                        <img class="redesFooter" src="IMG/instagram.png">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img class="redesFooter" src="IMG/twitter.png">
+                    </a>
+                    <a href="https://www.tiktok.com/">
+                        <img class="redesFooter" src="IMG/tiktok.png">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img class="redesFooter" src="IMG/facebok.webp">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img class="redesFooter" src="IMG/linkedin.png">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img class="redesFooter" src="IMG/youtube.png">
+                    </a>
+                    <a href="https://www.whatsapp.com/">
+                        <img class="redesFooter" src="IMG/whatsapp.webp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+<script src="JS/carrinho.js"></script>
+<script src="JS/basico.js"></script>
+</html>
