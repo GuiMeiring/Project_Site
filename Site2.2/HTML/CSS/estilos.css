@@ -361,49 +361,9 @@ hr{
 .botaoSectionPage{
    width: 300px;
 }
-.page-section2{
-    position: relative;
-    left: 50px;
-}
 
-.footer{
-    position: absolute;
-    top:1900px;
-}
-.rodapé1{
-    color: #000000;
-    position: relative;
-    left:350px;
-   
 
-    
-}
-@media screen and  (max-width: 600px){
-    .r1{
 
-        color: #000000;
-        position: absolute;
-        left:60px;
-        top:900px
-        
-    }
-}
-    
-
-.rodapé2{
-    position: relative;
-    left: 600px;
-    color: #000000;
-}
-@media screen and (max-width: 600px) {
-    .r2{
-        position: relative;
-        left: 220px;
-        color: #000000; 
-        top:40px;
-    }
-    
-}
 #texto{
     height: 850px;
     font-family:Times;
@@ -1140,20 +1100,13 @@ hr{
     
     
 }
-.titulometodo{
-    height:180px;
+.mtComp{
+    border: 1px solid red;  
 }
-.metododecompra{
-    height: 80px;
-}
-.metodo{
-    background-color: #F22652;
+.buttonMtComp{
     width: 400px;
-    height: 80px;
-    position: absolute;
-    top: 200px;
-    left:420px;
 }
+
 
 .caixacartao{
     width: 300px;

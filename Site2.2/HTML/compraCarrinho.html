@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra//Game_Mania</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -44,18 +45,10 @@
             <div class="caixaEntrega">
                 <label id="escritaentrega">Entrega:</label>
                 <br>
-                <input type="button" id="loja" value="loja" onclick="entregaLoja(
-                    document.getElementById('escrevacartao').value,
-                    document.getElementById('escrevasegurancaa').value,
-                    document.getElementById('escrevaCupom').value,
-                1)">
+                <input type="button" id="loja" value="loja">
                 
-                <input type="button" id="casa" value="endereço" onclick="entregaCasa(
-                    document.getElementById('escrevacartao').value,
-                    document.getElementById('escrevasegurancaa').value,
-                    document.getElementById('escrevaCupom').value,
-                2)">
-                <div id="EscritaTotalEntrega"></div>
+                <input type="button" id="casa" value="endereço">
+                <h1 id="EscritaTotalEntrega"></h1>
             </div>
 
             

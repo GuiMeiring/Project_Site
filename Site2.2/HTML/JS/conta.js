@@ -170,7 +170,9 @@ $(".botaoCEP").click(
                 $("#bairro").val(dados.bairro);
                 $("#cidade").val(dados.localidade);
                 $("#estado").val(dados.uf);
-                 return true;
+                $(".botaoCEP").html("<a id='aCont' href='MetodoDeCompraCarrinho.html'>Continuar</a>")
+                $("#aCont").css("text-decoration","none");
+                $("#aCont").css("color","white");
             }
             else{
                 //Tratar o erro... cep inválido

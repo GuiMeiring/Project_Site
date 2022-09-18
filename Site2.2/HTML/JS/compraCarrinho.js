@@ -1,26 +1,62 @@
-function entregaLoja(numCartao , numSeguranca , cupom , posicao){
-    localStorage.setItem("Cartao"+posicao, numCartao); 
-    localStorage.setItem("SegurancaCartao"+posicao, numSeguranca); 
-    localStorage.setItem("cupom"+posicao, cupom);
-    console.log(numCartao);
-    console.log(numSeguranca);
-    console.log(cupom);
-    let TotalPrecoCarrinho=0;
-    console.log(TotalPrecoCarrinho);
-    let  EscritaTotalEntrega =document.getElementById('EscritaTotalEntrega');
-    adicionarPreco(TotalPrecoCarrinho , EscritaTotalEntrega);
+$(document).ready(function(){
+     $("#loja").click(function(){
+        let cartao = $("#escrevacartao").val();
+        let numSeg= $("#escrevasegurancaa").val();
+        let cupom = $("#escrevaCupom").val();
+        let valor = localStorage.getItem("precoCarrinho1");
+        console.log(cartao);
+        console.log(numSeg);
+        console.log(cupom);
+        console.log(cupom);
+        if(cartao!=0 && numSeg!=0){
+            if(valor!=0){
+                 if(cupom >999999999 && cupom <=2222222222){
+                    valor =valor-((valor*8)/100);
+                     console.log(valor);
+                     $("#EscritaTotalEntrega").text(valor);
+                }else if(cupom >2222222222 && cupom <=4444444444){
+                    valor =valor-((valor*15)/100);
+                    console.log(valor);
+                    $("#EscritaTotalEntrega").text(valor);
+                }
+                else if(cupom >4444444444 && cupom <=6666666666){
+                    valor =valor-((valor*27)/100);
+                    console.log(valor);
+                    $("#EscritaTotalEntrega").text(valor);
+                }
+                else if(cupom >6666666666 && cupom <=8888888888){
+                    valor =valor-((valor*36)/100);
+                    console.log(valor);
+                    $("#EscritaTotalEntrega").text(valor);
+                }
+                else if(cupom >8888888888 && cupom <=9999999999){
+                    valor =valor-((valor*45)/100);
+                    console.log(valor);
+                    $("#EscritaTotalEntrega").text(valor);
+                }else{
+          console.log(valor);
+          $("#EscritaTotalEntrega").text(valor);
+       }
+                }
+            }
+
+
+    })
+    $("#casa").click(function(){
+
+    })
     
-}
-function adicionarPreco(TotalPrecoCarrinho , EscritaTotalEntrega){
-    let botaoEntrega =document.getElementById('loja');
-    botaoEntrega.style.background="#2D9BF0"
-    botaoEntrega.style.borderRadius="12px";
-    if(localStorage.getItem('Cartao1')!=0 && localStorage.getItem('SegurancaCartao1')!=0){
-        if(EscritaTotalEntrega!=0){
-             if(localStorage.getItem('cupom1')>999999999 && localStorage.getItem('cupom1')<=2222222222){
-                 TotalPrecoCarrinho=(parseFloat(localStorage.getItem('precoCarrinho1')-(parseFloat(localStorage.getItem('precoCarrinho1'))*8)/100));
-                 console.log(TotalPrecoCarrinho);
-                 EscritaTotalEntrega.innerHTML="<h1 id='frete'>R$</h1><h1 id='precototalComFrete'>"+TotalPrecoCarrinho+"</h1>";
+
+});
+function adicionarPreco(cartao , numSeg , cupom , valor){
+    if(cartao!=0 && numSeg!=0){
+        if(valor!=0){
+             if(cupom >999999999 && cupom <=2222222222){
+            let valorTotal=valor-((valor*8)/100);
+                 console.log(valor);
+                 console.log(valorTotal);
+
+                 
              }
              else if(localStorage.getItem('cupom1')>2222222222 && localStorage.getItem('cupom1')<=4444444444){
                 TotalPrecoCarrinho=(parseFloat(localStorage.getItem('precoCarrinho1')-(parseFloat(localStorage.getItem('precoCarrinho1'))*15)/100));
@@ -49,6 +85,8 @@ function adicionarPreco(TotalPrecoCarrinho , EscritaTotalEntrega){
 }
 }
 }
+
+
 function entregaCasa(numCartao , numSeguranca , cupom , posicao){
     localStorage.setItem("Cartao"+posicao, numCartao); 
     localStorage.setItem("SegurancaCartao"+posicao, numSeguranca); 
