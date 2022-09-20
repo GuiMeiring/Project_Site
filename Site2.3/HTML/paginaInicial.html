@@ -12,81 +12,77 @@
 </head>
 <body>
     <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo1">
-                        <img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo">
-                        <div class="logo">
-                            <p class="Game_Mania">Game_Mania</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12 cabeçalhoRespo2">
-                        <form class="pesquisa" action="action_page.php">
-                            <input class="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa">
-                        </form>
-                        <button class="btn btn-outline-danger botaoMenu "name="menu usuário">Menu Usuário</button>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#topo"><img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu do usuário
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="paginaInicial.html">Sair</a></li>
+                      <li><a class="dropdown-item" href="carrinho.html">Meu carrinho!</a></li>
+                      <li><a class="dropdown-item" href="um pouco sobre nós.html">Relatar erro!</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Configuração</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+              </div>
             </div>
+          </nav>
     </header>
-    <section class="login">
-        <div class="container">
-            <div class="row">
-                <div class=" offset-md-7 col-md-5 offset-sm-2 col-sm-10  offset-xs-2 col-xs-10 menuRespo">
-                    <div id="caixaMenu">
-                        <div id="fotoUsuário"></div>
-                        <div id="Login"></div>
-                        <div id="fotoCarrinho"></div>
-                        <div id="Carrinho"></div>
-                        <div id="Sair"></div>
-                        <div id="RelatarErro"></div>
-                        <div id="fotoRelatar"></div>
-                        <div id="Configuração"></div>
-                        <div id="fotoConfiguracao"></div>
-                    </div>
-            </div>
-        </div>
-        </div>
+    <br>
+    <br>
         <form return action="menu.html">
         <div class="jumbotron text-center">
             <h1 class="Login">Login de conta:</h1>
         </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-10 col-xs-10 coluna">
+                    <div class=" col-lg-5 col-md-10 col-sm-10 col-xs-10 coluna">
                          <label class="escritaemail" for="email">Informe seu nome:</label>
                         <input id="Nome" placeholder="Nome e sobrenome"  for="name" name="name" minlength="7" maxlength="40" required>
                         <div id="TrueNome"></div>
                         <div id="FalseNome"></div>
                        
                     </div>
-                    <div class="col-md-1 col-sm-2 col-xs-2 imgConta1">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 imgConta1">
 
                     </div>
-                    <div class="col-md-5 col-sm-10 col-xs-10 coluna">
+                    <div class="col-lg-5  col-md-10 col-sm-10 col-xs-10 coluna">
                         <label class="letrasenha" for="pwd">Informe sua senha:</label>
                         <input id="Senha" type="password" id="pwd" name="pwd" placeholder="Senha" type="password" minlength="8" required>
                         <div id="TrueSenha"></div>
                         <div id="FalseSenha"></div>
                        
                     </div>
-                    <div class="col-md-1 col-sm-2 col-xs-2 imgConta">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 imgConta">
 
                     </div>
                 </div>
                 <div class="row">
-                    <div  class="col-md-5 col-sm-10 col-xs-10 botaoResp">
-                        <button class="esqueci"><a href="verificação1.html">Esqueci a minha senha</a></button>
+                    <div  class="col-lg-5  col-md-12 col-sm-10 col-xs-10 botaoResp">
+                        <a href="verificação1.html"><button type="button" class="esqueci">Esqueci a minha senha</button></a>
                     </div>
-                    <div class="offset-md-1 col-md-5 col-sm-10 col-xs-10  botaoResp">
-                        <button class="criar"><a href="criaçãoConta.html">Não tenho conta</a></button>
+                    <div class="col-lg-5 offset-lg-1 col-md-12 col-sm-10 col-xs-10  botaoResp">
+                        <a href="criaçãoConta.html"><button type="button" class="criar">Não tenho conta</button></a>
                     </div><!--botão,quaso o usuario não tenha a conta-->
                 </div>
                 <div class="row">
-                    <div class="col-md-5 col-sm-5 col-6 botaoResp">
-                        <button class= "voltar"><a href="menu.html">Voltar</a></button> 
-                    </div>
-                    <div class="offset-md-1 col-md-5 col-sm-5 col-6 botaoResp">
+                    <div class=" col-12 offset-lg-1 col-lg-9 text-center botaoResp">
                         <input type="submit" id="validar" value="validar!">
                     </div>
                 </div>
@@ -136,6 +132,7 @@
     </footer>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="JS/conta.js"></script>
 <script src="JS/basico.js"></script>
 </html>

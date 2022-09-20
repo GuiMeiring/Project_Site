@@ -26,12 +26,12 @@ function exibirCarrinho(carrinho){
         if(localStorage.getItem('nome'+i)!=null){ //produto adicionado no carrinho
             carrinho.innerHTML +="<br><div id='produto'><h1 id='letraNome'>"+localStorage.getItem('nome'+i)+"</h1>"+
                         "<h4 id='complemento'>Preço:R$ "+localStorage.getItem('preco'+i)+"| Quantidade: "+localStorage.getItem('quantidade'+i)+"</h4>"
-                        +"</div>"+"<input type='button' id='excluir' onclick ='excluirItem("+i+")' value='Excluir do carrinho!'>";
+                        +"</div>"+"<input type='button'  class='btn btn-danger' id='excluir' onclick ='excluirItem("+i+")' value='Excluir do carrinho!'><br>";
             valorTotal=parseFloat(localStorage.getItem('preco'+i)) * parseInt(localStorage.getItem('quantidade'+i)) + valorTotal;
         }
     }
 
-    carrinho.innerHTML +="<br><h2 id='EscritaprecoCarrinho'>Preço total dos produtos:R$ </h2>"+"<h2 id='precoCarrinho'>"+valorTotal+"</h2>";
+    carrinho.innerHTML +="<br><h2 id='EscritaprecoCarrinho'>Preço total dos produtos: R$ "+"<span id='precoCarrinho'>"+valorTotal+"</span></h2><br><a href='#topo'> <button type='button' class='btn btn-danger botaoSectionPage'>Voltar ao topo!</button></a><br>";
     
 }
 function excluirItem(item){

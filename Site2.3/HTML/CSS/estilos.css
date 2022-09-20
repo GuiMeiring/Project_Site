@@ -4,193 +4,18 @@ body{
 }
 
 .img_logo{
-    height: 100px ;
-    width: 100px;
-    border-radius: 12px;
-    position: relative;
-    left: 80px;
-    top: -20px;
+    height: 80px ;
+    width: 80px;
 } 
 
-.Game_Mania{
-    color:#2D9BF0;
-    font-family: Goudy Stout;
-    font-size: 15px ;
-    text-shadow: 0 0 20px #000000 ;
-    position: relative;
-    top:-70px;
-    left: 220px;
-    
-}
-
-.menu .logo{
-     background-color:#c4c0c0;
-     border-radius: 18px;
-     border-color: #F22652;
-}
-
-.pesquisa{
-    position: relative;
-    top:10px;
-    height: 42px;
-    width: 300px;
-    
-}
-.botaoMenu {
-    position: relative;
-    left: 150px;
-    top: -20px;
-}
-
-.img_usuario{
-    height: 40px;
-    width: 40px;
-    border-radius: 60px;
-    position: relative;
-    top: 10px;
-}
-.link_Sair{
-    color: white;
-    text-decoration: none;
-    font-family: Times;
-    font-size: 20px;
-    position: relative;
-    left:70px;
-    top:-90px;
-}
-.img_carrinho{
-    height: 40px;
-    width: 40px;
-    border-radius: 60px;
-    position: relative;
-    top: 10px;
-}
-
-.link_carrinho{
-    color: white;
-    text-decoration: none;
-    font-family: Times;
-    font-size: 20px;
-    position: relative;
-    left:70px;
-    top:-20px;
-    
-}
 
 
-.link_carrinho:hover { /*passar com o mouse*/
-    color: #5ab4dc ;
-    text-decoration: none;
-    font-size: 20px;
-    
-    
-}
-.img_suporte{
-    height: 40px;
-    width: 40px; 
-    position: relative;
-    top: -155px;
-    left:260px;
-}
-.link_relatarErro{
-    color: white;
-    text-decoration: none;
-    font-family: Times;
-    font-size: 20px;
-    position: relative;
-    top: -120px;
-    left:320px;
-}
-.img_configuração{
-    height: 40px;
-    width: 40px; 
-    border-radius: 30px;
-    position: relative;
-    top: -155px;
-    left:260px;
-}
-.link_configuracao{
-    color: white;
-    text-decoration: none;
-    font-family: Times;
-    font-size: 20px;
-    position: relative;
-    top: -190px;
-    left:320px;
-}
-
-.link_login{
-    color: white;
-    font-family: Times;
-    text-decoration: none;
-    font-size: 20px;
-    
-}
-
-.link_login:hover { /*passar com o mouse*/
-    color: #5ab4dc ;
-    text-decoration: none;
-    font-size: 20px;
-   
-    
-}
-.Titulos{
-    display:inline-flex;
-    background-color: white;
-    height: 30px;
-    width: 90px;
-}
-
-
-.pesquisarapida{
-    display: inline-flex;
-    background-color: #f3325a;
-    height: 30px ;
-    width: 80px ;
-
-}
-.bt1 , .bt2 , .bt3{
-    color: white;
-    background-color: #f3325a;
-    width: 300px;
-    height: 70px;
-    left:50px;
-}
-
-.pesquisarapida, a{
-    color:black;
-}
 .Titulo{
     font-family:Times;
     color: white;
     font-size: 24px;
 }
-.botaosobre{
-    background-color: #f3325a;
-    height: 36px;
-    width: 100px;
-    text-align: center;
 
-}   
-.letrasobre{
-    font-family: Times;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    
-
-}
-.botaosobre{
-    background-color: #f3325a;
-    width: 100px;
-    height: 50px;
-    border-radius: 12px;
-}
-.botaosobre:hover{
-    width: 110px;
-    height: 60px;
-    box-shadow:20px 10px 10px black;
-}
 .img_texto{
    height: 340px;
    width: 340px;
@@ -358,9 +183,7 @@ hr{
     top:-5px;
     left: -5px;
 }
-.botaoSectionPage{
-   width: 300px;
-}
+
 
 
 
@@ -854,7 +677,7 @@ hr{
 }
 #cep{
     height: 40px;
-    width: 500px; 
+    width: 400px; 
 }
 #escritaCEP{
     color: white;
@@ -1106,8 +929,13 @@ hr{
 .buttonMtComp{
     width: 400px;
 }
+#textMetodoCompra{
+    font-family:Times;
+    color: white;
+    font-size: 54px;
+}
 
-
+validar
 .caixacartao{
     width: 300px;
     height: 80px;
@@ -1375,13 +1203,14 @@ width: 400px;
     width:230px;
     height:90px;
 }
+#escritaCarrinho{
+    font-family:Times;
+    color: white;
+    font-size: 54px;
+}
+
 #carrinho{
-    
-    width: 800px;
-    height: 1000px;
-    right: 400px;
-    position: absolute;
-    top: 750px;
+    border: 1px solid red; 
     
     
 }
@@ -1391,14 +1220,7 @@ width: 400px;
 .espaço{
     background: #000000;
 }
-#letraNome{
-    position:relative;
-    left: 300px;
-}
-#letarpreco{
-    position:relative;
-    left: 280px;
-}
+
 
 #letraquantidade{
     position:relative;
@@ -1409,39 +1231,7 @@ header{
 }
 #produto{
     background-color:#c4c0c0;
-    align-items: center;
-    justify-content: center;
 }
-#produto:hover{
-    box-shadow:20px 10px 10px black;
-}
-#complemento{
-    text-align: center;
-}
-#excluir{
-    align-items: center;
-    background-color: #f22652;
-    color: white;
-    border-radius: 12px;
-    width: 170px;
-    height: 60px;
-    text-align: center; 
-    
-    
-}
-#excluir:hover{
-    height: 80px;
-    color: black;
-    box-shadow:20px 10px 10px black;
-}
-#carrinhoHr{
-    background-color: white;
-    border-radius: 10px;
-    position: absolute;
-    width: 100%;
-    top:760px;
-}
-
 
 footer{
     background-color: #00000090;
@@ -1450,7 +1240,7 @@ footer{
 
 .redesFooter{
     width: 50px;
-    height: 50px;;
+    height: 50px;
     
 }
 .redesFooter:hover{
@@ -1523,32 +1313,7 @@ footer{
 #total:hover{
     box-shadow:20px 10px 10px black;
 }
-#pagar{
-    background-color: #F22652;
-    color:white;
-    border-radius: 12px;
-    width: 170px;
-    height: 60px;
-    text-align: center;
-    position: relative;
-    top:1540px;
-    right: -780px;
-}
-#precoCarrinho{
-    color:white;
-    position: relative;
-    top:70px;
-    right: -150px;
-}
-#pagar:hover{
-     height: 80px;
-     color: black;
-     box-shadow:20px 10px 10px black;
-    
-}
-#precoCarrinho:hover{
-    color: #2D9BF0;
-}
+
 #mostrarDesc{
     position: relative;
     left:130px;
@@ -1562,6 +1327,7 @@ footer{
     right: 110px;
     border-radius: 12px;
 }
+EscritaprecoCarrinho
 #preçoTotalForza:hover{
     box-shadow:20px 10px 10px black;
 }
@@ -1728,29 +1494,21 @@ footer{
     left:370px;
 }
 #EscritaprecoCarrinho{
-    position: absolute;
-    top: 880px;
+    font-family:Times;
     color: white;
+    font-size: 34px;
 }
 #EscritaprecoCarrinho:hover{
     color: #2D9BF0;
 }
-#precoCarrinho{
-    position: absolute;
-    top: 880px;
-    left:290px;
 
-}
-#precoCarrinho:hover{
-   color: #2D9BF0;
-}
 #edicaoexclusiva{
     color: white;
     position: absolute;
     top: 220px;
     left: 530px;
 }
-
+cep
 .opiniao{
     background-color: #00000090;
     width: 1330px;
