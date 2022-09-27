@@ -1,4 +1,53 @@
-window.onload = function caixaMostrarComentario(){
+$(document).ready(function(){
+    var comentariosPro1 =document.getElementById('comentariosPro1');
+            for(var i=0;i <=100;i++){
+                comentariosPro1.innerHTML +="<br><br><p>-------------------------------------------------------------</p><div><p>Nome do Usuário: "+localStorage.getItem('NomePro1'+i)+"</p><p>"+localStorage.getItem('MensagemPro1'+i)+"</p>"+
+                    "<h4>Resposta: nenhuma resposta da empresa,aguarde...</h4></div>";
+            }
+    $("#enviarPro1").click(function(){
+        if(localStorage.getItem("guardarPosicao")==null){
+            localStorage.setItem("guardarPosicao",0);
+           var posicao=parseInt(localStorage.getItem("guardarPosicao"));
+        }else{
+           console.log(posicao);
+           var posicao=parseInt(localStorage.getItem("guardarPosicao"));
+           posicao++;
+           console.log(posicao);
+           localStorage.setItem("guardarPosicao",posicao);
+        }
+        let nomeUsuario=localStorage.getItem("Usuario");
+        let mensagem= $("#caixamensagemPro1").val();
+        localStorage.setItem("UsuarioPro1"+posicao,nomeUsuario);
+        localStorage.setItem("MensagemPro1"+posicao, mensagem)
+        console.log(nomeUsuario);
+        console.log(mensagem);
+        for(var i=0;i <=100;i++){
+           
+            if(mensagem !=null){ 
+                comentariosPro1.innerHTML += "<br><br><p>-------------------------------------------------------------</p><div><p> Nome do Usuário: "+localStorage.getItem("UsuariosPro1"+i)+"</p><p>"+localStorage.getItem("MensagemPro1"+i)+"</p>"+
+                                       "<h4>Resposta: nenhuma resposta da empresa,aguarde...</h4></div>";
+           
+        }
+    } 
+    
+   
+    
+
+    
+
+    })
+   
+    
+   
+    
+
+    
+
+    })
+
+
+
+/*window.onload = function caixaMostrarComentario(){
     var comentario =document.getElementById('verificaçãoComentário');
     verificarComentario(comentario);
 
@@ -52,3 +101,4 @@ function excluirComentario(item){
     
     
 }
+*/

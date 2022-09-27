@@ -1,16 +1,4 @@
-$(document).ready(function(){
-    $(".botaoMenu").dblclick(function(){
-        $(".menuRespo").css("background","#00000090");
-        $("#fotoUsuário").html("<img class='img_usuario' src='IMG/fotousuario.png' alt='foto do usuario'>");
-        $("#Sair").html("<a  class='link_Sair'href='paginaInicial.html'>Sair</a>");
-        $("#fotoCarrinho").html("<img class='img_carrinho' src='IMG/carrinho.png' alt='foto do carrinho' width = '5%'>");
-        $("#Carrinho").html("<a class='link_carrinho'href='carrinho.html'>Meu carrinho!</a>");
-       
-        $("#RelatarErro").html("<a class='link_relatarErro'href='um pouco sobre nós.html'>Relatar Erro!</a>");
-        $("#fotoRelatar").html("<img class='img_suporte' src='IMG/suporte.png' alt='suporte' width = '5%'>")
-        $("#Configuração").html("<img class='img_configuração' src='IMG/cofiguracao.png' alt='configuração' width = '5%'>");
-        $("#fotoConfiguracao").html("<a class='link_configuracao'href='configuracao.html'>Configuração!</a>");
-    })});
+
 $(document).ready(function(){
     $(".caixaPromoção1").mouseleave(function(){
         $(".caixaPromoção1").html("<p><br>Processador (CPU): AMD Zen 2 customizado com 8 núcleos e 16 threads a até 3,8 GHz.<br>Placa de vídeo (GPU): 52 UCs a até 1,825 GHz (12 TFLOPS)<br>Arquitetura do chip gráfico: RDNA 2 customizada.<br>Interface de memória: 16 GB GDDR6 (256-bit)</p><br>O Xbox Series X é o console de videogame mais poderoso da Microsoft. Lançado em 10 de novembro de 2020 no Brasil, o aparelho faz parte da família Series, que também conta com o Xbox Series S. Com preço de R$ 4.599, a plataforma é voltada para gamers exigentes que buscam rodar os jogos em resoluções de até 4K com imagens fluidas a até 120 quadros por segundo.");

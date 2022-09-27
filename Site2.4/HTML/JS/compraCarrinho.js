@@ -13,29 +13,29 @@ $(document).ready(function(){
                  if(cupom >999999999 && cupom <=2222222222){
                     valor =valor-((valor*5)/100);
                      console.log(valor);
-                     $("#EscritaTotalEntrega").text(valor);
+                     $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >2222222222 && cupom <=4444444444){
                     valor =valor-((valor*10)/100);
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }
                 else if(cupom >4444444444 && cupom <=6666666666){
                     valor =valor-((valor*15)/100);
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }
                 else if(cupom >6666666666 && cupom <=8888888888){
                     valor =valor-((valor*18)/100);
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }
                 else if(cupom >8888888888 && cupom <=9999999999){
                     valor =valor-((valor*20)/100);
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else{
           console.log(valor);
-          $("#EscritaTotalEntrega").text(valor);
+          $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
        }
                 }
             }
@@ -52,139 +52,134 @@ $(document).ready(function(){
         console.log(cupom);
         console.log(valor);
         if(cartao!=0 && numSeg!=0 && valor !=0){
+            console.log("oi")
             if(localStorage.getItem("CEPConta")>00000000 && localStorage.getItem("CEPConta")<=22222222){
                 if(cupom >999999999 && cupom <=2222222222){
-                    valor =(valor-((valor*5)/100))+25;
+                    valor =(valor-(((valor*5)/100)+25));
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >2222222222 && cupom <=4444444444){
                     valor =(valor-((valor*10)/100))+25;
                     console.log(valor);
+                    console.log("oi")
                     $("#EscritaTotalEntrega").text(valor);
                 }else if(cupom >4444444444 && cupom <=6666666666){
                     valor =(valor-((valor*15)/100))+25;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >6666666666 && cupom <=8888888888){
                     valor =(valor-((valor*18)/100))+25;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >8888888888 && cupom <=9999999999){
                     valor =(valor-((valor*20)/100))+25;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else{
                     valor=valor+25;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 } 
             }
-            if(localStorage.getItem("CEPConta")>2222222222 && localStorage.getItem("CEPConta")<=44444444){
+            else if(localStorage.getItem("CEPConta")>2222222222 && localStorage.getItem("CEPConta")<=44444444){
                 if(cupom >999999999 && cupom <=2222222222){
                     valor =(valor-((valor*5)/100))+50;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >2222222222 && cupom <=4444444444){
                     valor =(valor-((valor*10)/100))+50;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >4444444444 && cupom <=6666666666){
                     valor =(valor-((valor*15)/100))+50;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >6666666666 && cupom <=8888888888){
                     valor =(valor-((valor*18)/100))+50;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >8888888888 && cupom <=9999999999){
                     valor =(valor-((valor*20)/100))+50;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else{
                     valor=valor+50;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 } 
             }
-            if(localStorage.getItem("CEPConta")>44444444 && localStorage.getItem("CEPConta")<=66666666){
+            else if(localStorage.getItem("CEPConta")>44444444 && localStorage.getItem("CEPConta")<=66666666){
                 if(cupom >999999999 && cupom <=2222222222){
                     valor =(valor-((valor*5)/100))+75;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >2222222222 && cupom <=4444444444){
                     valor =(valor-((valor*10)/100))+75;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >4444444444 && cupom <=6666666666){
                     valor =(valor-((valor*15)/100))+75;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >6666666666 && cupom <=8888888888){
                     valor =(valor-((valor*18)/100))+75;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >8888888888 && cupom <=9999999999){
                     valor =(valor-((valor*20)/100))+75;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else{
                     valor=valor+75;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 } 
             }
-            if(localStorage.getItem("CEPConta")>66666666 && localStorage.getItem("CEPConta")<=88888888){
+            else if(localStorage.getItem("CEPConta")>66666666 && localStorage.getItem("CEPConta")<=88888888){
                 if(cupom >999999999 && cupom <=2222222222){
                     valor =(valor-((valor*5)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >2222222222 && cupom <=4444444444){
                     valor =(valor-((valor*10)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >4444444444 && cupom <=6666666666){
                     valor =(valor-((valor*15)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >6666666666 && cupom <=8888888888){
                     valor =(valor-((valor*18)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >8888888888 && cupom <=9999999999){
                     valor =(valor-((valor*20)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else{
                     valor=valor+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 } 
             }
-            if(localStorage.getItem("CEPConta")>88888888 && localStorage.getItem("CEPConta")<=99999999){
+            else if(localStorage.getItem("CEPConta")>88888888 && localStorage.getItem("CEPConta")<=99999999){
                 if(cupom >999999999 && cupom <=2222222222){
-                    valor =(valor-((valor*5)/100))+100;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    valor =(valor-(((valor*5)/100)+100));
+                    console.log("oi");
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >2222222222 && cupom <=4444444444){
                     valor =(valor-((valor*10)/100))+100;
-                    console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >4444444444 && cupom <=6666666666){
                     valor =(valor-((valor*15)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >6666666666 && cupom <=8888888888){
                     valor =(valor-((valor*18)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else if(cupom >8888888888 && cupom <=9999999999){
                     valor =(valor-((valor*20)/100))+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").text(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 }else{
                     valor=valor+100;
                     console.log(valor);
-                    $("#EscritaTotalEntrega").value(valor);
+                    $("#EscritaTotalEntrega").html("<span id='parcelas'>"+valor+"</span>");
                 } 
             }
             
@@ -192,12 +187,52 @@ $(document).ready(function(){
 
     })
     $("#vezes1").click(function(){
-        let parcela = $("#EscritaTotalEntrega").val();
-        let cupom = $("#EscritaTotalEntrega").val();
-        console.log(cupom);
-        console.log("1x");
-         parcela = parcela/1;
-        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+cupom+"</span>")
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/1;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    $("#vezes1").click(function(){
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/1;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    $("#vezes1").click(function(){
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/1;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    
+    $("#vezes1").click(function(){
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/1;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    $("#vezes2").click(function(){
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/2;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    $("#vezes5").click(function(){
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/5;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    $("#vezes10").click(function(){
+        let parcela = $("#EscritaTotalEntrega").text();
+        let parcelas=parcela/10;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
+
+    })
+    $("#vezes12").click(function(){
+        let parcelas = $("#parcelas").text();
+         parcelas=parcelas/12;
+        $("#escritaParcela").html("<span>1 parcela de </span><span id='parcelas'>R$ "+parcelas+"</span>")
 
     })
     

@@ -85,6 +85,7 @@ $(document).ready(function(){
         $(".imgContaCriacao1").html("<img id='verificadoNomeCriacao' src='IMG/contaVerificada.png' name='contaNãoVerificada'>");
         $("#TrueNomeCriacao").text("Nome válido");
         $("#TrueNomeCriacao").css("color","#74df7b");
+        localStorage.setItem("Usuario",nome);
         console.log("Nome válido");
             //validar email
             if(!(valiEmail.test(email))){

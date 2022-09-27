@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial//Game_Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#topo"><img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#topo">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu do usuário
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="paginaInicial.html">Sair</a></li>
+                      <li><a class="dropdown-item" href="carrinho.html">Meu carrinho!</a></li>
+                      <li><a class="dropdown-item" href="um pouco sobre nós.html">Relatar erro!</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Configuração</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <br>
+    <br>
+        <form return action="menu.html">
+        <div class="jumbotron text-center">
+            <h1 class="Login">Login de conta:</h1>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-5 col-md-10 col-sm-10 col-xs-10 coluna">
+                         <label class="escritaemail" for="email">Informe seu nome:</label>
+                        <input id="Nome" placeholder="Nome e sobrenome"  for="name" name="name" minlength="7" maxlength="40" required>
+                        <div id="TrueNome"></div>
+                        <div id="FalseNome"></div>
+                       
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 imgConta1">
+
+                    </div>
+                    <div class="col-lg-5  col-md-10 col-sm-10 col-xs-10 coluna">
+                        <label class="letrasenha" for="pwd">Informe sua senha:</label>
+                        <input id="Senha" type="password" id="pwd" name="pwd" placeholder="Senha" type="password" minlength="8" required>
+                        <div id="TrueSenha"></div>
+                        <div id="FalseSenha"></div>
+                       
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 imgConta">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-lg-5  col-md-12 col-sm-10 col-xs-10 botaoResp">
+                        <a href="verificação1.html"><button type="button" class="esqueci">Esqueci a minha senha</button></a>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 col-md-12 col-sm-10 col-xs-10  botaoResp">
+                        <a href="criaçãoConta.html"><button type="button" class="criar">Não tenho conta</button></a>
+                    </div><!--botão,quaso o usuario não tenha a conta-->
+                </div>
+                <div class="row">
+                    <div class=" col-12 offset-lg-1 col-lg-9 text-center botaoResp">
+                        <input type="submit" id="validar" value="validar!">
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        <article>
+           
+        </article>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footerRespo">
+                    <div id="footer">
+                        <h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil 
+                            <a href="relatarErro.html">|Relatar erro</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 footerRespo">
+                    <a href="https://www.instagram.com/">
+                        <img class="redesFooter" src="IMG/instagram.png">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img class="redesFooter" src="IMG/twitter.png">
+                    </a>
+                    <a href="https://www.tiktok.com/">
+                        <img class="redesFooter" src="IMG/tiktok.png">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img class="redesFooter" src="IMG/facebok.webp">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img class="redesFooter" src="IMG/linkedin.png">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img class="redesFooter" src="IMG/youtube.png">
+                    </a>
+                    <a href="https://www.whatsapp.com/">
+                        <img class="redesFooter" src="IMG/whatsapp.webp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="JS/conta.js"></script>
+<script src="JS/basico.js"></script>
+</html>
