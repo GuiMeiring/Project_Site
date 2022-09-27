@@ -205,6 +205,22 @@ hr{
     
 
 }
+.letra{
+    color: white;
+    font-family:Times;
+    font-size: 46px;
+}
+.letraSobre{
+    color: white;
+    font-family:Times;
+    font-size: 36px;
+}
+.SobreParagrafo{
+    color: white;
+    font-family:Times;
+    font-size: 20px; 
+}
+
 .faleconosco{
     color: white;
     font-family:Times;
@@ -247,7 +263,6 @@ caixaMostrarComentario
 #voltaraomenu:hover{
     box-shadow:20px 10px 10px black;
 }
-
 
 
 
@@ -342,7 +357,6 @@ caixaMostrarComentario
     
 }
 .imgPro{
-    height: 400px;
     width: 400px;
     
 }
@@ -904,7 +918,12 @@ caixaMostrarComentario
 
 
 
-
+.botaoConfirmar{
+    background-color:#F22652;
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+}
 .escritacompra{
     color: white;
     font-size: 60px;
@@ -928,9 +947,7 @@ caixaMostrarComentario
     
     
 }
-.mtComp{
-    border: 1px solid red;  
-}
+
 .buttonMtComp{
     width: 400px;
 }
@@ -994,6 +1011,11 @@ width: 400px;
 #escrevasegurancaa:hover{
     box-shadow:20px 10px 10px black;
 }
+.botaoVezes{
+    width: 200px;
+    height: 50px;
+
+}
 .vezes{
     color: white;
     font-size: 30px;
@@ -1001,72 +1023,7 @@ width: 400px;
     top: 750px;
     left: 150px;
 }
-#x1{
-    background-color: #F22652;
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top:850px;
-    left: 150px;
 
-}
-
-#x1:hover{
-    background-color: #2D9BF0;
-}
-
-#x2{
-    background-color: #F22652;
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top:850px;
-    left: 580px;
-
-}
-
-#x2:hover{
-    background-color: #2D9BF0;
-}
-#x3{
-    background-color: #F22652;
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top:850px;
-    right: 150px;
-
-}
-
-#x3:hover{
-    background-color: #2D9BF0;
-}
-#x10{
-    background-color: #F22652;
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top:950px;
-    left: 350px;
-
-}
-
-#x10:hover{
-    background-color: #2D9BF0;
-}
-#x12{
-    background-color: #F22652;
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top:950px;
-    right: 350px;
-
-}
-
-#x12:hover{
-    background-color: #2D9BF0;
-}
 .entrega{
     color: white;
     font-size: 30px;
@@ -1143,33 +1100,6 @@ width: 400px;
 #escrevaParcela:hover{
     color: #2D9BF0;
 }
-.voltar2{
-        background-color: #2D9BF0;
-        width: 200px;
-        height: 80px;
-        border-radius: 12px;
-        position:absolute;
-        top: 1050px;
-        left:250px;
-    
-}
-.voltar2:hover{
-    width:230px;
-    height:90px;
-}
-.metododecompra{
-    height:1100px;
-}
-.rodapécompra1{
-    position: absolute;
-    top:1150px;
-    left:400px;
-}
-.rodapécompra2{
-    position: absolute;
-    top:1200px;
-    left:550px; 
-}
 
 
 
@@ -1214,11 +1144,6 @@ width: 400px;
     font-size: 54px;
 }
 
-#carrinho{
-    border: 1px solid red; 
-    
-    
-}
 .nomep{
     background-color: #13131331; 
 }
@@ -1582,7 +1507,6 @@ cep
     color: white;
 }
 .coluna{
-    border: 1px solid red;
     height: 150px;
     text-align: center;
 }
@@ -1604,7 +1528,6 @@ cep
     text-align: center;
 }
 .botaoResp{
-    border: 1px solid red;
     text-align: center;
     height: 130px;
 }

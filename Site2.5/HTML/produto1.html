@@ -50,10 +50,10 @@
         <div class="container">
             <div class="row text-center ">
                 <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 offset-sm-1 col-sm-10 colProdutos ">
-                    <img class="imgPro" src="IMG/CadeiraGamer1.png">
+                    <img class="imgPro" src="IMG/playstation5.webp">
                     <br>
-                    <h1 class="NamePro" id="p8nome">Cadeira Gamer Roxtor Warrior Dourada</h1>
-                    <h4 class="NamePro">R$ <span id="p8preco">899,00</span></h4>
+                    <h1 class="NamePro" id="p5nome">Playstation 5</h1>
+                    <h4 class="NamePro">R$ <span id="p5preco">4561,98</span></h4>
                 </div>
                 <p>*em até 12x sem juros</p>
              </div>
@@ -62,22 +62,12 @@
                     <input type="text"placeholder="Quantidade" class="qtdPro" id="p5quantidade">
                             <button class="buttonCarPro" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
-                            document.getElementById('p8nome').textContent, //nome
-                            document.getElementById('p8preco').textContent, //preco
-                            document.getElementById('p8quantidade').value, //quantidade
-                            8)"><img class="imgCarPro" src="IMG/carrinho.png"></button>
+                            document.getElementById('p5nome').textContent, //nome
+                            document.getElementById('p5preco').textContent, //preco
+                            document.getElementById('p5quantidade').value, //quantidade
+                            5)"><img class="imgCarPro" src="IMG/carrinho.png"></button>
                     <br>
-                    <p class="descProd">Descrição:<br>Marca	Roxtor
-                        <br>Dimensões do produto	85D x 65W x 32H centímetros
-                        <br>Material	Poliuretano
-                        <br>Peso máximo recomendado	120 Quilogramas
-                        <br>Tipo de material do assento	Espuma
-                        <br>12 meses de garantia contra defeito de fabricação
-                        <br>Revestimento PU
-                        <br>Espuma laminada
-                        <br>Sistema de reclínio back system
-                        <br>Rodas antirrisco e antirruído
-                        <br>Suporte lombar</p>
+                    <p class="descProd">Descrição:<br>Processador (CPU): AMD Zen 2 customizado com 8 núcleos e 16 threads a até 3,5 GHz<br>Placa de vídeo (GPU): 36 UCs a até 2.23 GHz (10.28 TFLOPS)<br>Arquitetura do chip gráfico: RDNA 2 customizada<br>Interface de memória: 16 GB GDDR6 (256-bit)<br>Largura de memória: 448 GB/s<br><br>O Playstation 5 (PS5) é o console da Sony para a nona geração de videogames. Por ser um dos lançamentos mais aguardados de 2020 e um dos consoles mais queridos do mercado.</p>
                 </div>
             </div>
         </div>
@@ -88,11 +78,14 @@
                 <div class="offset-2 col-8 text-center">
                     <h2>Comentários sobre o produto:</h2>
                     <br>
-                    <input id= "caixamensagemPro1" placeholder="mensagem" rows="5" cols="20" maxlength="200" minlength="2"  required autocomplete></input>
-                    <button id="enviarPro1"  type="button" class="btn btn-light"><img src="IMG/send.svg"></img></button>
+                    <input id= "caixamensagem" placeholder="mensagem" rows="5" cols="20" maxlength="200" minlength="2"  required autocomplete></input>
+                    <button id="enviar"  type="button" class="btn btn-light"><img src="IMG/send.svg"></img></button>
+                    <br>
+                    <br>
+                    <button id="verComentarios"  type="button" class="btn btn-danger">Ver Comentários</button>
                 </div>
                 <br>
-                <div class="offset-2 col-8 " id="comentariosPro1"></div>
+                <div class="offset-2 col-8 " id="comentarios"></div>
                 <div class="offset-2 col-8 text-center"><br><a href='#topo'><button type="button" class="btn btn-danger">Voltar ao topo!</button></a></div>
             </div>
         </div>
@@ -141,3 +134,4 @@
 <script src="JS/carrinho.js"></script>
 <script src="JS/comentar.js"></script>
 </html>
+    

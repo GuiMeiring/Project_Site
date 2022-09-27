@@ -113,16 +113,14 @@
                     </div>
                     <div class="preçoPromoção1">
                         <h3 id="p1nome">Xbox Series X</h3>
-                        <h4>R$</h4>
-                        <h4 id="p1preco">4888,99</h4>
-                        <input type="text" id="p1quantidade">
-                        <input type="button" value="Adicionar ao carrinho!" onclick="
-                         addCarrinho(
-                            document.getElementById('p1nome').textContent, //nome
-                            document.getElementById('p1preco').textContent, //preco
-                            document.getElementById('p1quantidade').value,
-                           //quantidade
-                        1)"> 
+                        <h4>De R$5018,08<br>Para R$<span id="p1preco">4561,98</span> 10%</h4>
+                        <input type="text" class="qtd" placeholder="Quantidade" id="p1quantidade">
+                        <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                        addCarrinho(
+                        document.getElementById('p1nome').textContent, //nome
+                        document.getElementById('p1preco').textContent, //preco
+                        document.getElementById('p1quantidade').value, //quantidade
+                        1)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
                      </div>
                 </div>
                 <div class="offset-md-2 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
@@ -131,15 +129,14 @@
                     </div>
                     <div class="preçoPromoção2">
                         <h3 id="p2nome">Playstation 5</h3>
-                        <h4>R$</h4>
-                        <h4 id="p2preco">4561,98</h4>
-                        <input type="text" id="p2quantidade">
-                        <input type="button" value="Adicionar ao carrinho!" onclick="
-                        addCarrinho(
+                        <h4>De 5018,08<br>Para R$<span id="p2preco">4561,98</span> 10%</h4>
+                        <input type="text" class="qtd" placeholder="Quantidade" id="p2quantidade">
+                        <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
                             document.getElementById('p2nome').textContent, //nome
                             document.getElementById('p2preco').textContent, //preco
                             document.getElementById('p2quantidade').value, //quantidade
-                        2)"> <!-- quantos elementos foram adiconados -->
+                            2)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados --><!-- quantos elementos foram adiconados -->
                     </div>
                 </div>
             </div>
@@ -152,15 +149,14 @@
                     </div>
                     <div class="preçoPromoção3">
                         <h3 id="p3nome">Battlefield V</h3>
-                        <h4>R$</h4>
-                        <h4 id="p3preco">173,90</h4>
-                        <input type="text" id="p3quantidade">
-                        <input type="button" value="Adicionar ao carrinho!" onclick="
-                        addCarrinho(
+                        <h4>De R$208,68<br>Para R$<span id="p3preco">173,90</span> 20%</h4>
+                        <input type="text" class="qtd" placeholder="Quantidade" id="p3quantidade">
+                        <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
                             document.getElementById('p3nome').textContent, //nome
                             document.getElementById('p3preco').textContent, //preco
                             document.getElementById('p3quantidade').value, //quantidade
-                            3)"> <!-- quantos elementos foram adiconados -->
+                            3)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
                     </div>
                 </div>
                 <div class="offset-md-2 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
@@ -169,16 +165,27 @@
                     </div>
                     <div class="preçoPromoção4">
                         <h3 id="p4nome">Assassin's Creed Valhalla</h3>
-                        <h4>R$</h4>
-                        <h4 id="p4preco">157,00</h4>
-                        <input type="text" id="p4quantidade">
-                        <input type="button" value="Adicionar ao carrinho!" onclick="
-                        addCarrinho(
+                        <h4>De R$188,40<br>Para R$<span id="p4preco">157,00</span> 20%</h4>
+                        <input type="text" class="qtd" placeholder="Quantidade" id="p4quantidade">
+                        <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
                             document.getElementById('p4nome').textContent, //nome
                             document.getElementById('p4preco').textContent, //preco
                             document.getElementById('p4quantidade').value, //quantidade
-                            4)"><!-- quantos elementos foram adiconados -->
+                            4)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
+                        
                     </div>
+                </div>
+                <br>
+                <br>
+                <div class="col-12 text-center">
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPC">Mais!</button>
+                        <a href='#topo'>
+                            <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
+                        </a>
+                    </div>
+                    <div id="loadingPC"></div>
                 </div>
                 
                             
@@ -192,12 +199,13 @@
             <br>
             <div class="row">
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-8 page-section2">
-                    <a href="produto1.html">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
-                            <img class="imgPS" src="IMG/playstation5.webp">
+                        <div class="col-12 divPro">
+                            <a href="produto1.html">
+                               <img class="imgPS" src="IMG/playstation5.webp">
+                            </a>
                         </div>
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5 id="p5nome">Playstation 5</h5>
                             <p>R$ <span id="p5preco">4561,98</span></p>
@@ -210,14 +218,13 @@
                             5)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
                         </div>
                     </div>
-                </a>
                 </div>
                 <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgPS" src="IMG/Playstation4.webp">
                         </div>
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                            <br>
                            <h5>Playstation 4</h5>
                            <p>R$ 2999,99</p>
@@ -228,11 +235,11 @@
                 </div>
                 <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgPS" src="IMG/controleps4.png">
                         </div>
                         
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5>Controle de Playstation 4</h5>
                             <p>R$ 299,00</p>
@@ -242,11 +249,11 @@
                 </div>
                 <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgPS" src="IMG/controleps5.png">
                         </div>
                         
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5>Controle de Playstation 5 </h5>
                             <p>R$ 449,00</p>
@@ -276,16 +283,16 @@
             <br>
             <div class="row">
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 page-section2">
-                <a href="produto2.html">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
-                            <img class="imgXB" src="IMG/xboxseriex.png">
+                        <div class="col-12 divPro">
+                            <a href="produto2.html">
+                               <img class="imgXB" src="IMG/xboxseriex.png">
+                            </a>
                         </div>
-                        
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5 id="p6nome">Xbox Serie X</h5>
-                            <p id="p6preco">R$ <span id="p6preco">4561,98</span></p>
+                            <p>R$ <span id="p6preco">4561,98</span></p>
                             <input type="text" class="qtd" placeholder="Quantidade" id="p6quantidade">
                             <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
@@ -295,14 +302,13 @@
                             6)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
                         </div>
                     </div>
-                </a>
                 </div>
                 <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgXB" src="IMG/controleXbox.png">
                         </div>
-                        <div class="col-lg-12 divDec text-center">
+                        <div class="col-12 divDec text-center">
                             <br>
                             <h5>Controle Xbox One</h5>
                             <p>R$ 200,90</p>
@@ -312,10 +318,10 @@
                 </div>
                 <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgXB" src="IMG/XboxSerieS.png">
                         </div>
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5>Xbox Serie S</h5>
                             <p>2169,00</p>
@@ -326,10 +332,10 @@
                 </div>
                 <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgXB" src="IMG//controleXbox360.png">
                         </div>
-                        <div class="col-lg-12 divDec text-center">
+                        <div class="col-12 divDec text-center">
                             <br>
                             <h5>Controle Xbox 360</h5>
                             <p>R$ 118,98</p>
@@ -359,13 +365,13 @@
             <br>
             <div class="row">
                 <div class=" col-lg-2  col-md-2 col-sm-4 col-xs-12 page-section2">
-                <a href="produto3.html">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
-                            <img class="imgPC" src="IMG/PCGamer.png">
+                        <div class="col-12 divPro">
+                            <a href="produto3.html">
+                               <img class="imgPC" src="IMG/PCGamer.png">
+                            </a>   
                         </div>
-                        
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5 id="p7nome">PC Gamer ITX Arena Setup Powered By Asus</h5>
                             <p>R$ <span id="p7preco">4999,00</span></p>
@@ -378,15 +384,14 @@
                             7)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
                         </div>
                     </div>
-                </a>
                 </div>
                 <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgPC" src="IMG/RTX.png">
                         </div>
                         
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                            <h5>Placa de Vídeo NVIDIA GeForce RTX 2060 Super Galax</h5>
                            <p>R$ 2295,00 </p>
@@ -396,11 +401,11 @@
                 </div>
                 <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgPC" src="IMG/MonitorGamer.png">
                         </div>
                         
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5>Monitor Gamer Alienware Curvo QD-OLED de 34 polegada</h5>
                             <p>R$ 10998,00</p>
@@ -410,10 +415,10 @@
                 </div>
                 <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgPC" src="IMG/MousePad.png">
                         </div>
-                        <div class="col-lg-12 divDec text-center">
+                        <div class="col-12 divDec text-center">
                             <br>
                            <h5>Mousepad Gamer HyperX Fury Ultra, RGB, (360x300mm)</h4>
                            <p>R$ 219,99</p>
@@ -442,13 +447,13 @@
             <br>
             <div class="row">
                 <div class=" col-lg-2  col-md-2 col-sm-4 col-xs-12 page-section2">
-                    <a href="produto4.html">
-                    <div class="row">
-                        <div class="col-lg-12 divPro">
-                            <img class="imgCG" src="IMG/CadeiraGamer1.png">
+                   <div class="row">
+                        <div class="col-12 divPro">
+                            <a href="produto4.html">
+                                <img class="imgCG" src="IMG/CadeiraGamer1.png">
+                            </a>
                         </div>
-                        
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5 id="p8nome">Cadeira Gamer Roxtor Warrior Dourada</h5>
                             <p>R$ <span id="p8preco">899,00</span></p>
@@ -461,15 +466,14 @@
                             8)"><img class="imgCar" src="IMG/carrinho.png"></button> <!-- quantos elementos foram adiconados -->
                         </div>
                     </div>
-                </a>
                 </div>
                 <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgCG" src="IMG/CadeiraGamer2.png">
                         </div>
                         
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5>Cadeira Gamer Roxtor Warrior Verde Claro e Preto</h5>
                             <p>R$ 899,90</p>
@@ -479,10 +483,10 @@
                 </div>
                 <div class="offset-lg-1 col-lg-2 offset-md-1 col-md-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgCG" src="IMG/CadeiraGamer3.png">
                         </div>
-                        <div  class="col-lg-12 divDec text-center">
+                        <div  class="col-12 divDec text-center">
                             <br>
                             <h5>ThunderX3 Cadeira GamerT GC12 Preta/Azul</h5>
                             <p>R$ 1299,99</p>
@@ -492,10 +496,10 @@
                 </div>
                 <div class=" offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-4 col-xs-12 page-section2">
                     <div class="row">
-                        <div class="col-lg-12 divPro">
+                        <div class="col-12 divPro">
                             <img class="imgCG" src="IMG/CadeiraGamer4.png">
                         </div>
-                        <div class="col-lg-12 divDec text-center">
+                        <div class="col=12 divDec text-center">
                             <br>
                             <h5>Cadeira Gamer Premium, CGR-01 Preto/Verde</h5>
                             <p>R$ 899,90</p>

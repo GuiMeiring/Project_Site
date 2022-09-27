@@ -40,7 +40,11 @@ function excluirItem(item){
     localStorage.removeItem('quantidade'+item);
 }
 //cria a chave do preço original do carrinho
-function addPrecoCarrinho(valortotal){localStorage.setItem("precoCarrinho1", valortotal);console.log(valortotal);}
+function addPrecoCarrinho(valortotal){
+    localStorage.setItem("precoCarrinho1", valortotal);
+    console.log(valortotal);
+}
+
 //
 
 
