@@ -143,7 +143,6 @@ hr{
     width: 170px;
     position: relative;
     top: 40px;
-    left: -5px;
     
 }
 .imgXB{
@@ -164,7 +163,6 @@ hr{
     width: 130px;
     position: relative;
     top: 10px;
-    left: 10px;
     
 }
 .qtd{
@@ -231,7 +229,7 @@ hr{
 
 
 }
-caixaMostrarComentario
+
 .nome{
     position: absolute;
     left: 100px;
@@ -319,14 +317,6 @@ caixaMostrarComentario
     position:absolute;
     top: 450px;
     left:500px;
-}
-@media screen and (max-width: 600px){
-    .voltaMenu{
-        position:absolute;
-        top: 300px;
-        left:200px;
-    
-    }
 }
 
 .irmenu:hover{
@@ -577,7 +567,7 @@ caixaMostrarComentario
 
 #Nome{
     height: 40px;
-    width: 400px; 
+    width: 350px;
 }
 #Nome:hover{
     box-shadow:20px 10px 10px black;
@@ -595,7 +585,7 @@ caixaMostrarComentario
 }
 #Senha{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #Senha:hover{
     box-shadow:20px 10px 10px black;
@@ -647,7 +637,7 @@ caixaMostrarComentario
 }
 #escrevanome{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevanome:hover{
     box-shadow:20px 10px 10px black;
@@ -664,7 +654,7 @@ caixaMostrarComentario
 }
 #escrevaData{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevaData:hover{
     box-shadow:20px 10px 10px black;
@@ -676,7 +666,7 @@ caixaMostrarComentario
 }
 #escrevaCPF{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevaCPF:hover{
     box-shadow:20px 10px 10px black;
@@ -689,14 +679,14 @@ caixaMostrarComentario
 }
 #escrevaemail3{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevaemail3:hover{
     box-shadow:20px 10px 10px black;
 }
 #cep{
     height: 40px;
-    width: 400px; 
+    width: 350px; 
 }
 #escritaCEP{
     color: white;
@@ -733,8 +723,9 @@ caixaMostrarComentario
 }
 #escrevanumero{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
+
 #escrevanumero:hover{
     box-shadow:20px 10px 10px black;
 }
@@ -757,7 +748,7 @@ caixaMostrarComentario
 }
 #escrevasenha{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevasenha:hover{
     box-shadow:20px 10px 10px black;
@@ -774,7 +765,7 @@ caixaMostrarComentario
 }
 #escrevacaofirmacao{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevacaofirmacao:hover{
     box-shadow:20px 10px 10px black;
@@ -957,7 +948,7 @@ caixaMostrarComentario
     font-size: 54px;
 }
 
-validar
+
 .caixacartao{
     width: 300px;
     height: 80px;
@@ -980,7 +971,7 @@ validar
 
 #escrevacartao{
  height: 40px;
- width: 400px;
+ width: 350px;
 }
 #escrevacartao:hover{
     box-shadow:20px 10px 10px black;
@@ -1006,13 +997,13 @@ left: 70px;
 }
 #escrevasegurancaa{
 height: 40px;
-width: 400px;
+width: 350px;
 }
 #escrevasegurancaa:hover{
     box-shadow:20px 10px 10px black;
 }
 .botaoVezes{
-    width: 200px;
+    width: 100px;
     height: 50px;
 
 }
@@ -1169,22 +1160,13 @@ footer{
 }
 
 .redesFooter{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     
 }
 .redesFooter:hover{
     opacity: 0.3;
 }
-@media screen and (max-width: 600px){
-    .redes2{
-       position: relative;
-       left:100px;
-       top:-5px;
-    
-    }
-}
-
 
 #footer{
     color: white;
@@ -1257,7 +1239,7 @@ footer{
     right: 110px;
     border-radius: 12px;
 }
-EscritaprecoCarrinho
+
 #preçoTotalForza:hover{
     box-shadow:20px 10px 10px black;
 }
@@ -1367,7 +1349,7 @@ EscritaprecoCarrinho
     }
 #escrevaCupom{
     height: 40px;
-    width: 400px;
+    width: 350px;
 }
 #escrevaCupom:hover{
         box-shadow:20px 10px 10px black;
@@ -1399,6 +1381,7 @@ EscritaprecoCarrinho
     position:relative ;
     left: 100px;
 }
+
 #casa:hover{
     background-color: #2D9BF0;
     box-shadow:20px 10px 10px black;
@@ -1438,7 +1421,7 @@ EscritaprecoCarrinho
     top: 220px;
     left: 530px;
 }
-cep
+
 .opiniao{
     background-color: #00000090;
     width: 1330px;

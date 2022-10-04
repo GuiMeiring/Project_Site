@@ -3,7 +3,7 @@ $(document).ready(function(){
         var comentarios =document.getElementById('comentarios');
         for(var i=0;i <=100;i++){
             if(localStorage.getItem("Mensagem"+i) != null){
-                comentarios.innerHTML +="<br><br><p>-------------------------------------------------------------</p><div><p>Nome do Usuário: "+localStorage.getItem('Usuarios'+i)+"</p><p>"+localStorage.getItem('Mensagem'+i)+"</p>"+
+                comentarios.innerHTML +="<br><br><p>----------------------------------------------</p><div><p>Nome do Usuário: "+localStorage.getItem('Usuarios'+i)+"</p><p>"+localStorage.getItem('Mensagem'+i)+"</p>"+
                 "<h4>Resposta: nenhuma resposta da empresa,aguarde...</h4></div>";
             }
             

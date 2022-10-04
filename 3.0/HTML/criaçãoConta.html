@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial//Game_Mania</title>
+    <link rel="icon" href="IMG/game.png">
+    <title>Conta//Game_Mania</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
@@ -21,7 +20,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#topo">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,93 +45,83 @@
     </header>
     <br>
     <br>
-        <form return action="menu.html">
-        <div class="jumbotron text-center">
-            <h1 class="Login">Login de conta:</h1>
-        </div>
+    <section>
+        <form  return action="criaçãosenha.html">
+            <div class="jumbotron text-center titulo">
+                <h1 id="letraCriacao">Criação de Conta:</h1>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class=" col-lg-5 col-md-10 col-sm-10 col-xs-10 coluna">
-                         <label class="escritaemail" for="email">Informe seu nome:</label>
-                        <input id="Nome" placeholder="Nome e sobrenome"  for="name" name="name" minlength="7" maxlength="40" required>
-                        <div id="TrueNome"></div>
-                        <div id="FalseNome"></div>
-                       
+                    <div class="col-lg-5 col-md-10 col-sm-10 col-xs-10 coluna">
+                        <label class=" escritanome"for="name">Informe seu nome completo:</label>
+                        <input id="escrevanome" type="name"placeholder="Nome e sobrenome"  for="name" name="name" minlength="7" maxlength="40" required>
+                        <div id="TrueNomeCriacao"></div>
+                        <div id="FalseNomeCriacao"></div>
                     </div>
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 imgConta1">
-
+                    <div class=" col-md-1 col-sm-2 col-xs-2 imgContaCriacao1"></div>
+                    <div class="col-lg-5 offset-lg-1 col-md-10 col-sm-10 col-xs-10 coluna">
+                        <label class="escritaemail3" for="email">Informe seu e-mail:</label>
+                        <input id="escrevaemail3" placeholder="exemplo@gmail.com" type="email" for="email" name="email" maxlength="40" required>
+                        <div id="TrueEmailCriacao"></div>
+                        <div id="FalseEmailCriacao"></div>
+                    </div><!--adicionar e-mail;possivel com com o "@"-->
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgContaCriacao2"></div>
+                <div class="row"></div>
+                    <div class="col-lg-6 offset-lg-3  col-md-10 col-sm-10 col-xs-10 coluna">
+                        <label class="escritaCPF">Informe seu CPF: </label>
+                        <input id="escrevaCPF" for="cpf" name="cpf"  placeholder="123.456.789-12" required>
+                        <div id="TrueCPFCriacao"></div>
+                        <div id="FalseCPFCriacao"></div>
                     </div>
-                    <div class="col-lg-5  col-md-10 col-sm-10 col-xs-10 coluna">
-                        <label class="letrasenha" for="pwd">Informe sua senha:</label>
-                        <input id="Senha" type="password" id="pwd" name="pwd" placeholder="Senha" type="password" minlength="8" required>
-                        <div id="TrueSenha"></div>
-                        <div id="FalseSenha"></div>
-                       
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 imgConta">
-
-                    </div>
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgContaCriacao3"></div>
                 </div>
                 <div class="row">
-                    <div  class="col-lg-5  col-md-12 col-sm-10 col-xs-10 botaoResp">
-                        <a href="verificação1.html"><button type="button" class="esqueci">Esqueci a minha senha</button></a>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-12 col-sm-10 col-xs-10  botaoResp">
-                        <a href="criaçãoConta.html"><button type="button" class="criar">Não tenho conta</button></a>
-                    </div><!--botão,quaso o usuario não tenha a conta-->
-                </div>
-                <div class="row">
-                    <div class=" col-12 offset-lg-1 col-lg-9 text-center botaoResp">
-                        <input type="submit" id="validar" value="validar!">
+                    <div class="col-12 text-center botaoResp">
+                        <input type="submit" id="validarCriacao" value="validar!">
                     </div>
                 </div>
             </div>
-            
         </form>
-        <article>
-           
-        </article>
     </section>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-12 footerRespo">
                     <div id="footer">
-                        <h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil 
-                            <a href="relatarErro.html">|Relatar erro</a>
-                        </h3>
+                        <h3>Game_Mania/168,Avenida Paulista,São Paulo,SP,Brasil </h3>
                     </div>
                 </div>
                 <div class="col-12 footerRespo">
                     <a href="https://www.instagram.com/">
-                        <img class="redesFooter" src="IMG/instagram.png">
+                        <img class="redesFooter" src="IMG/instagram.png" alt="Logo do instagram">
                     </a>
                     <a href="https://www.twitter.com/">
-                        <img class="redesFooter" src="IMG/twitter.png">
+                        <img class="redesFooter" src="IMG/twitter.png" alt="Logo do Twitter">
                     </a>
                     <a href="https://www.tiktok.com/">
-                        <img class="redesFooter" src="IMG/tiktok.png">
+                        <img class="redesFooter" src="IMG/tiktok.png" alt="Logo do tiktok">
                     </a>
                     <a href="https://www.facebook.com/">
-                        <img class="redesFooter" src="IMG/facebok.webp">
+                        <img class="redesFooter" src="IMG/facebok.webp" alt="Logo do facebok">
                     </a>
                     <a href="https://www.linkedin.com/">
-                        <img class="redesFooter" src="IMG/linkedin.png">
+                        <img class="redesFooter" src="IMG/linkedin.png" alt="Logo do linkedin">
                     </a>
                     <a href="https://www.youtube.com/">
-                        <img class="redesFooter" src="IMG/youtube.png">
+                        <img class="redesFooter" src="IMG/youtube.png" alt="Logo do youtube">
                     </a>
                     <a href="https://www.whatsapp.com/">
-                        <img class="redesFooter" src="IMG/whatsapp.webp">
+                        <img class="redesFooter" src="IMG/whatsapp.webp" alt="Logo do whatsapp">
                     </a>
                 </div>
             </div>
         </div>
         
     </footer>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="JS/conta.js"></script>
+    <script src="JS/basico.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="JS/conta.js"></script>
-<script src="JS/basico.js"></script>
 </html>

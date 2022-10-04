@@ -6,13 +6,13 @@ $(document).ready(function(){
         let nomeSobrenome = /\b[A-Za-zÀ-ú][A-Za-zÀ-ú]+,?\s[A-Za-zÀ-ú][A-Za-zÀ-ú]{2,19}\b/;
         console.log(nomeLogin);
         if( nomeSobrenome.test(nomeLogin)){
-            $(".imgConta1").html("<img id='verificado' src='IMG/contaVerificada.png' name='contaVerificada'>");
+            $(".imgConta1").html("<img id='verificado' src='IMG/contaVerificada.png' alt='conta verificada, nome encontrado'>");
             $("#TrueNome").text("Nome válido");
             $("#TrueNome").css("color","#79df91");
             console.log("Nome válido");
      
          }else{
-            $(".imgConta1").html("<img id='verificado' src='IMG/Erro.png' name='contaNãoVerificada'>");
+            $(".imgConta1").html("<img id='verificado' src='IMG/Erro.png' alt='Nome não encontrada>");
             $("#FalseNome").text("Nome inválido");
             $("#FalseNome").css("color","#8b0000");
              console.log("Nome inválido");
@@ -22,11 +22,11 @@ $(document).ready(function(){
          console.log(senhaLogin);
          if(padraoSenha.test(senhaLogin)){
             $("#TrueSenha").prepend("<p>Senha válido</p>");
-            $(".imgConta").html("<img id='verificadoSenha' src='IMG/contaVerificada.png' name='contaVerificada'>");
+            $(".imgConta").html("<img id='verificadoSenha' src='IMG/contaVerificada.png' alt='conta verificada, senha encontrada'>");
             $("#TrueSenha").css("color","#74df7b");
             console.log("Senha válida");
          }else{
-            $(".imgConta").html("<img id='verificadoSenha' src='IMG/Erro.png' name='contaNãoVerificada'>");
+            $(".imgConta").html("<img id='verificadoSenha' src='IMG/Erro.png' alt='senha não encontrada'>");
             $("#FalseSenha").text(" A senha deve conter ao menos 8 dos caracteres mencionados, uma letra minúscula , uma letra minuscula e um caractere especial");
             $("#FalseSenha").css("color","#8b0000");
             console.log(" A senha deve conter ao menos 8 dos caracteres mencionados, uma letra minúscula , uma letra minuscula e um caractere especial");
@@ -45,13 +45,13 @@ $(document).ready(function(){
   //$/
   console.log(enviado);
   if(!(enviado.test(email))){
-      $(".imgConta").html("<img id='verificadoEmail' src='IMG/Erro.png' name='contaNãoVerificada'>");
+      $(".imgConta").html("<img id='verificadoEmail' src='IMG/Erro.png' alt='Email inválido'>");
       $("#FalseEmail").text("O código deve conter pelo menos uma letra maiúscula e pelo menos oito caracteres");
       $("#FalseEmail").css("color","#8b0000");
       console.log("O código deve conter pelo menos uma letra maiúscula e pelo menos oito caracteres");
       return false;
   }else{
-      $(".imgConta").html("<img id='verificadoEmail2' src='IMG/contaVerificada.png' name='contaVerificada'>");
+      $(".imgConta").html("<img id='verificadoEmail2' src='IMG/contaVerificada.png' alt='Email válido'>");
       $("#TrueEmail").text("Código válido");
       $("#TrueEmail").css("color","#74df7b");
       console.log("Código válido");
@@ -77,24 +77,24 @@ $(document).ready(function(){
     // Regex para duas strings, separadas com espaço e com no mínimo 3 caracteres. Aceita acentuação e rejeita números.
     // Faz a validacao do regex no campo indicado
     if(!(nomeSobrenome.test(nome))){
-        $(".imgContaCriacao1").html("<img id='verificadoNomeCriacao' src='IMG/Erro.png' name='contaNãoVerificada'>");
+        $(".imgContaCriacao1").html("<img id='verificadoNomeCriacao' src='IMG/Erro.png' alt='Nome inválido'>");
         $("#FalseNomeCriacao").text("Nome inválido");
         $("#FalseNomeCriacao").css("color","#8b0000");
         console.log("Nome inválido");
     }else if(nomeSobrenome.test(nome)){
-        $(".imgContaCriacao1").html("<img id='verificadoNomeCriacao' src='IMG/contaVerificada.png' name='contaNãoVerificada'>");
+        $(".imgContaCriacao1").html("<img id='verificadoNomeCriacao' src='IMG/contaVerificada.png' alt='Nome válido>");
         $("#TrueNomeCriacao").text("Nome válido");
         $("#TrueNomeCriacao").css("color","#74df7b");
         localStorage.setItem("Usuario",nome);
         console.log("Nome válido");
             //validar email
             if(!(valiEmail.test(email))){
-                $(".imgContaCriacao2").html("<img id='verificadoEmailCriacao' src='IMG/Erro.png' name='contaNãoVerificada'>");
+                $(".imgContaCriacao2").html("<img id='verificadoEmailCriacao' src='IMG/Erro.png' alt='Email inválido'>");
                 $("#FalseEmailCriacao").text("O código deve conter pelo menos uma letra maiúscula e pelo menos oito caracteres");
                 $("#FalseEmailCriacao").css("color","#8b0000");
                  console.log("Email inválido");
             }else if(valiEmail.test(email)){
-                 $(".imgContaCriacao2").html("<img id='verificadoEmailCriacao' src='IMG/contaVerificada.png' name='contaNãoVerificada'>");
+                 $(".imgContaCriacao2").html("<img id='verificadoEmailCriacao' src='IMG/contaVerificada.png' alt='Email válido'>");
                 $("#TrueEmailCriacao").text("Email válido");
                 $("#TrueEmailCriacao").css("color","#74df7b");
                 console.log("Email válido");
@@ -116,7 +116,7 @@ $(document).ready(function(){
                     soma =0;
                 }
                 if (soma != cpf[9]){
-                    $(".imgContaCriacao3").html("<img id='verificadoCPFCriacao' src='IMG/Erro.png' name='contaNãoVerificada'>");
+                    $(".imgContaCriacao3").html("<img id='verificadoCPFCriacao' src='IMG/Erro.png' alt='CPF não valido'>");
                     $("#FalseCPFCriacao").text("CPF inválida");
                     $("#FalseCPFCriacao").css("color","#8b0000");
                     return false;
@@ -138,14 +138,14 @@ $(document).ready(function(){
                     soma =0;
                 }
                 if (soma != cpf[10]){
-                    $(".imgContaCriacao3").html("<img id='verificadoCPFCriacao' src='IMG/Erro.png' name='contaNãoVerificada'>");
+                    $(".imgContaCriacao3").html("<img id='verificadoCPFCriacao' src='IMG/Erro.png' alt='CPF não valido'>");
                     $("#FalseCPFCriacao").text("CPF inválido");
                     $("#FalseCPFCriacao").css("color","#8b0000");
                     return false;
                 }   
                 console.log("Segundo digito: "+ soma);
                 if(soma == cpf[10]){
-                $(".imgContaCriacao3").html("<img id='verificadoCPFCriacao' src='IMG/contaVerificada.png' name='contaNãoVerificada'>");
+                $(".imgContaCriacao3").html("<img id='verificadoCPFCriacao' src='IMG/contaVerificada.png' alt='CPF valido'>");
                 $("#TrueCPFCriacao").text("CPF válido");
                 $("#TrueCPFCriacao").css("color","#74df7b");
                 }
@@ -187,13 +187,13 @@ $("#BuscarConta").click(
         console.log(BuscarNome);
         let nomeSobrenome = /\b[A-Za-zÀ-ú][A-Za-zÀ-ú]+,?\s[A-Za-zÀ-ú][A-Za-zÀ-ú]{2,19}\b/;
         if(nomeSobrenome.test(BuscarNome)){
-            $(".imgConta").html("<img id='buscarConta' src='IMG/contaVerificada.png' name='contaNãoVerificada'>");
+            $(".imgConta").html("<img id='buscarConta' src='IMG/contaVerificada.png' alt='nome encontrado'>");
             $("#NomeEncontrado").text("Nome de Conta encontrado");
             $("#NomeEncontrado").css("color","#79df91");
             console.log("Nome de Conta encontrado");
              return true;
          }else{
-            $(".imgConta").html("<img id='buscarConta' src='IMG/Erro.png' name='contaNãoVerificada'>");
+            $(".imgConta").html("<img id='buscarConta' src='IMG/Erro.png' alt='nome não encontrada'>");
             $("#NomeNaoEncontrado").text("Nome de Conta não encontrado");
             $("#NomeNaoEncontrado").css("color","#8b0000");
              console.log("Nome de Conta não encontrado");
@@ -214,22 +214,22 @@ $("#validarSenha").click(
          console.log(confirmacao);
          if(padraoSenha.test(senha)){
             $("#TrueCriacaoSenha").prepend("<p>Senha válido</p>");
-            $(".imgConta1").html("<img id='verificadoSenha' src='IMG/contaVerificada.png' name='contaVerificada'>");
+            $(".imgConta1").html("<img id='verificadoSenha' src='IMG/contaVerificada.png' alt='senha aceita '>");
             $("#TrueCriacaoSenha").css("color","#74df7b");
             console.log("Senha válida");
          }else{
-            $(".imgConta1").html("<img id='verificadoSenha' src='IMG/Erro.png' name='contaNãoVerificada'>");
+            $(".imgConta1").html("<img id='verificadoSenha' src='IMG/Erro.png' alt='senha não aceita '>");
             $("#FalseCriacaoSenha").text(" A senha deve conter ao menos 8 dos caracteres mencionados, uma letra minúscula , uma letra minuscula e um caractere especial");
             $("#FalseCriacaoSenha").css("color","#8b0000");
             console.log("Deve conter ao menos 8 dos caracteres mencionados, uma letra minúscula,uma maiuscula e um caractere especial");
          }
          if(confirmacao == senha && padraoSenha.test(confirmacao)){
             $("#TrueConfirmacaoSenha").text("Confirmação válida! ")
-            $(".imgConta2").html("<img id='verificadoSenha' src='IMG/contaVerificada.png' name='contaVerificada'>");
+            $(".imgConta2").html("<img id='verificadoSenha' src='IMG/contaVerificada.png' nalt='senha aceita '>");
             $("#TrueConfirmacaoSenha").css("color","#74df7b");
             console.log("Confirnação válida");
          }else{
-            $(".imgConta2").html("<img id='verificadoSenha' src='IMG/Erro.png' name='contaNãoVerificada'>");
+            $(".imgConta2").html("<img id='verificadoSenha' src='IMG/Erro.png' alt='senha não aceita '>");
             $("#FalseConfirmacaoSenha").text("As senhas são diferentes! ");
             $("#FalseConfirmacaoSenha").css("color","#8b0000");
             console.log("As senhas são diferentes");
