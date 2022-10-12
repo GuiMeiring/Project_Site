@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#topo"><img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#topo">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,30 +45,39 @@
     </header>
     <br>
     <br>
-    <section class="verificacao">
-        <form return action="buscaConta.html">
-            <div class="jumbotron text-center titulo">
-                 <h1 class="Login">Verificação:</h1>
-                 <br>
-                 <br>
-                 <br>
+    <br>
+    <br>
+    <br>
+    <section class="criacaosenha">
+        <form return action="paginaInicial.html">
+            <div class="jumbotron text-center">
+                <h1 class="Login">Criação de senha:</h1>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class=" offset-md-3 col-md-6  col-sm-10 col-xs-12 colunaVerificacao">
-                        <label class="escritanumero" for="pwd">Digite os números enviados pelo e-mail:</label>
-                        <input id="escrevanumero" type="password" for="password" placeholder="Código enviado por email" maxlength="9" minlength="9" required>
-                        <div id="TrueEmail"></div>
-                        <div id="FalseEmail"></div>
+            <br>
+            <br>
+           <div class="container">
+               <div class="row">
+                   <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-10 col-sm-10 col-xs-10 coluna">
+                       <label class="escritasenha" for="pwd">Crie a sua senha:</label>
+                       <input id="escrevasenha" type="password" id="pwd" name="pwd" placeholder="Senha" type="password" maxlength="10" minlength="8" required>
+                       <div id="TrueCriacaoSenha"></div>
+                       <div id="FalseCriacaoSenha"></div>
                     </div>
-                    <div class="col-md-3 col-sm-2 offset-xs-5 col-xs-2 imgConta"></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center botaoResp">
-                        <input type="submit" id="validarEmail" value="validar!" >
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgConta1"></div>
+                    <div class="offset-lg-0 col-lg-5  offset-md-1 col-md-10 col-sm-10 col-xs-10 coluna">
+                        <label class="escritasenhaconfirmacao" for="pwd">Confirmação da senha:</label>
+                        <input id="escrevacaofirmacao" placeholder="Confirmação" type="password" maxlength="10" minlength="8" required>
+                        <div id="TrueConfirmacaoSenha"></div>
+                        <div id="FalseConfirmacaoSenha"></div>
                     </div>
-                 </div>
-            </div>
+                    <div class="col-md-1 col-sm-2 col-xs-2 imgConta2"></div>
+               </div>
+               <div class="row">
+                    <div class="col-lg-11 col-12 text-center botaoResp">
+                       <input type="submit"  id="validarSenha"value="validar!">
+                    </div>
+               </div>
+           </div>
         </form>
     </section>
     <footer>

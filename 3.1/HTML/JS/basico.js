@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
     $(".caixaPromoção1").mouseleave(function(){
-        $(".caixaPromoção1").html("<p><br>Processador (CPU): AMD Zen 2 customizado com 8 núcleos e 16 threads a até 3,8 GHz.<br>Placa de vídeo (GPU): 52 UCs a até 1,825 GHz (12 TFLOPS)<br>Arquitetura do chip gráfico: RDNA 2 customizada.<br>Interface de memória: 16 GB GDDR6 (256-bit)</p><br>O Xbox Series X é o console de videogame mais poderoso da Microsoft. Lançado em 10 de novembro de 2020 no Brasil, o aparelho faz parte da família Series, que também conta com o Xbox Series S. Com preço de R$ 4.599, a plataforma é voltada para gamers exigentes que buscam rodar os jogos em resoluções de até 4K com imagens fluidas a até 120 quadros por segundo.");
+        $(".caixaPromoção1").html("<p><br>Processador (CPU): AMD Zen 2 customizado com 8 núcleos e 16 threads a até 3,8 GHz.<br>Placa de vídeo (GPU): 52 UCs a até 1,825 GHz (12 TFLOPS)<br>Arquitetura do chip gráfico: RDNA 2 customizada.<br>Interface de memória: 16 GB GDDR6 (256-bit)</p><br> Lançado em 10 de novembro de 2020 no Brasil, o aparelho faz parte da família Series, que também conta com o Xbox Series S. Com preço de R$ 4.599, a plataforma é voltada para gamers exigentes que buscam rodar os jogos em resoluções de até 4K com imagens fluidas a até 120 quadros por segundo.");
         $(".caixaPromoção1").css("color","white");
         $(".caixaPromoção1").css("background","#00000090");
         $(".preçoPromoção1").css("background","#00000090");
         $(".preçoPromoção1").css("color","white");
         $(".caixaPromoção1").css("height","400px");
-        $(".caixaPromoção1").css("width","400px");
-        $(".preçoPromoção1").css("width","400px");
+        $(".caixaPromoção1").css("width","350px");
+        $(".preçoPromoção1").css("width","350px");
 
     });
     
@@ -19,8 +19,8 @@ $(document).ready(function(){
         $(".preçoPromoção2").css("background","#00000090");
         $(".preçoPromoção2").css("color","white");
         $(".caixaPromoção2").css("height","400px");
-        $(".caixaPromoção2").css("width","400px");
-        $(".preçoPromoção2").css("width","400px");
+        $(".caixaPromoção2").css("width","350px");
+        $(".preçoPromoção2").css("width","350px");
 
     });  
     $(".caixaPromoção3").mouseleave(function(){
@@ -30,8 +30,8 @@ $(document).ready(function(){
         $(".preçoPromoção3").css("background","#00000090");
         $(".preçoPromoção3").css("color","white");
         $(".caixaPromoção3").css("height","400px");
-        $(".caixaPromoção3").css("width","400px");
-        $(".preçoPromoção3").css("width","400px");
+        $(".caixaPromoção3").css("width","350px");
+        $(".preçoPromoção3").css("width","350px");
 
     });  
     $(".caixaPromoção4").mouseleave(function(){
@@ -41,8 +41,15 @@ $(document).ready(function(){
         $(".preçoPromoção4").css("background","#00000090");
         $(".preçoPromoção4").css("color","white");
         $(".caixaPromoção4").css("height","400px");
-        $(".caixaPromoção4").css("width","400px");
-        $(".preçoPromoção4").css("width","400px");
+        $(".caixaPromoção4").css("width","350px");
+        $(".preçoPromoção4").css("width","350px");
+
+    });    
+   
+});
+$(document).ready(function(){
+    $("#buttonPR").dblclick(function(){
+        $("#loadingPR").html("<br><br><div class='spinner-border text-danger' role='status'><span class='visually-hidden'>Loading...</span></div>");
 
     });    
    

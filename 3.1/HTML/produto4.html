@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="IMG/game.png">
-    <title>Conta//Game_Mania</title>
+    <title>Produtos//Game_Mania</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
-<body>
+<body id="topo">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#topo"><img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo"></a>
+                <a class="navbar-brand" href="menu.html"><img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="menu.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,38 +45,65 @@
     </header>
     <br>
     <br>
-    <section class="criacaosenha">
-        <form return action="paginaInicial.html">
-            <div class="jumbotron text-center">
-                <h1 class="Login">Criação de senha:</h1>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row text-center ">
+                <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 offset-sm-1 col-sm-10 colProdutos ">
+                    <img class="imgPro" src="IMG/CadeiraGamer1.png" alt="Imagem da cadeira gamer Roxtor Warrior dourada">
+                    <br>
+                    <h1 class="NamePro" id="p8nome">Cadeira Gamer Roxtor Warrior Dourada</h1>
+                    <h4 class="NamePro">R$ <span id="p8preco">899,00</span></h4>
+                </div>
+                <p>*em até 12x sem juros</p>
+             </div>
+            <div class="row">
+                <div class="offset-2 col-8 text-center">
+                    <input type="text"placeholder="Quantidade" class="qtdPro" id="p8quantidade">
+                            <button class="buttonCarPro" value="Adicionar ao carrinho!" onclick="
+                            addCarrinho(
+                            document.getElementById('p8nome').textContent, //nome
+                            document.getElementById('p8preco').textContent, //preco
+                            document.getElementById('p8quantidade').value, //quantidade
+                            8)"><img class="imgCarPro" src="IMG/carrinho.png" alt="Imagem do carrinho"></button>
+                    <br>
+                    <p class="descProd">Descrição:<br>Marca	Roxtor
+                        <br>Dimensões do produto	85D x 65W x 32H centímetros
+                        <br>Material	Poliuretano
+                        <br>Peso máximo recomendado	120 Quilogramas
+                        <br>Tipo de material do assento	Espuma
+                        <br>12 meses de garantia contra defeito de fabricação
+                        <br>Revestimento PU
+                        <br>Espuma laminada
+                        <br>Sistema de reclínio back system
+                        <br>Rodas antirrisco e antirruído
+                        <br>Suporte lombar</p>
+                </div>
             </div>
-            <br>
-            <br>
-           <div class="container">
-               <div class="row">
-                   <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-10 col-sm-10 col-xs-10 coluna">
-                       <label class="escritasenha" for="pwd">Crie a sua senha:</label>
-                       <input id="escrevasenha" type="password" id="pwd" name="pwd" placeholder="Senha" type="password" maxlength="10" minlength="8" required>
-                       <div id="TrueCriacaoSenha"></div>
-                       <div id="FalseCriacaoSenha"></div>
-                    </div>
-                    <div class="col-md-1 col-sm-2 col-xs-2 imgConta1"></div>
-                    <div class="offset-lg-0 col-lg-5  offset-md-1 col-md-10 col-sm-10 col-xs-10 coluna">
-                        <label class="escritasenhaconfirmacao" for="pwd">Confirmação da senha:</label>
-                        <input id="escrevacaofirmacao" placeholder="Confirmação" type="password" maxlength="10" minlength="8" required>
-                        <div id="TrueConfirmacaoSenha"></div>
-                        <div id="FalseConfirmacaoSenha"></div>
-                    </div>
-                    <div class="col-md-1 col-sm-2 col-xs-2 imgConta2"></div>
-               </div>
-               <div class="row">
-                    <div class="col-lg-11 col-12 text-center botaoResp">
-                       <input type="submit"  id="validarSenha"value="validar!">
-                    </div>
-               </div>
-           </div>
-        </form>
+        </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="offset-2 col-8 text-center">
+                    <h2>Comentários sobre o produto:</h2>
+                    <br>
+                    <input id= "caixamensagem" placeholder="mensagem" rows="5" cols="20" maxlength="200" minlength="2"  required autocomplete></input>
+                    <button id="enviar"  type="button" class="btn btn-light"><img src="IMG/send.svg"></img></button>
+                    <br>
+                    <br>
+                    <button id="verComentarios"  type="button" class="btn btn-danger">Ver Comentários</button>
+                </div>
+                <br>
+                <div class="offset-2 col-8 " id="comentarios"></div>
+                <div class="offset-2 col-8 text-center"><br><a href='#topo'><button type="button" class="btn btn-danger">Voltar ao topo!</button></a></div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
     <footer>
         <div class="container">
             <div class="row">
@@ -114,7 +141,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="JS/conta.js"></script>
     <script src="JS/basico.js"></script>
+    <script src="JS/carrinho.js"></script>
+    <script src="JS/comentar.js"></script>
 </body>
 </html>

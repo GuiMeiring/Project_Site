@@ -12,7 +12,7 @@
 </head>
 <body id="topo">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#topo"><img class="img_logo" src="IMG/game.png" alt="logo" nome ="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,17 +49,25 @@
     <section class="menuprincipal">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
-                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                        <a href='#PROM'><button type="button" class="btn btn-dark buttonSection">Promoções</button></a>
-                        <a href='#PS'><button type="button" class="btn btn-dark buttonSection">Playstation</button></a>
-                        <a href='#XB'><button type="button" class="btn btn-dark buttonSection">Xbox</button></a>
-                        <a href='#PC'><button type="button" class="btn btn-dark buttonSection">PC</button></a>
-                        <a href='#CG'><button type="button" class="btn btn-dark buttonSection">Cadeira Gamer</button></a>
+                <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 text-center botoesMenu">
+                    <br>
+                    <br>
+                    <br>
+                    <div  class="btn-group" role="group" aria-label="Basic outlined example">
+                        <a href='#PROM'><button type="button" class="btn btn-danger ">Promoções</button></a>
+                        <a href='#PS'><button type="button" class="btn btn-danger">Playstation</button></a>
+                        <a href='#XB'><button type="button" class="btn btn-danger">Xbox</button></a>
+                        <a href='#PC'><button type="button" class="btn btn-danger">PC</button></a>
+                        <a href='#CG'><button type="button" class="btn btn-danger">Cadeira Gamer</button></a>
+                        <a href='#topo'><button type="button" class="btn btn-primary ">Voltar ao topo!</button></a>
+                        
                     </div>
                 </div>
                 <div class="offset-md-1 col-md-5 col-sm-12 col-xs-12 colunaMenu">
                     <div class="Titulo">
+                        <br>
+                        <br>
+                        <br>
                         <br>
                         <h1>Bem Vindo!</h1>
                          <p>Loja especializada em vendas de</p>
@@ -70,12 +78,21 @@
                      <a href="um pouco sobre nós.html"><button type="button" class="btn btn-danger">Sobre</button></a>
                 </div>
                 <div  class="offset-md-0 col-md-4 offset-sm-2 col-sm-8 col-xs-12 colunaMenu">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <img class="img_texto" src="IMG/game.png" alt="logodotexto">
                 </div>
 
             </div>
             <div class="row">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <br>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -115,7 +132,7 @@
                     <div class="preçoPromoção1">
                         <h3 id="p1nome">Xbox Series X</h3>
                         <h4>De R$5018,08<br>Para R$<span id="p1preco">4561,98</span> 10%</h4>
-                        <input type="text" class="qtd" placeholder="Quantidade" id="p1quantidade">
+                        <input type="number" min="0" max="20"  class="qtd" placeholder="Quantidade" id="p1quantidade">
                         <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                         addCarrinho(
                         document.getElementById('p1nome').textContent, //nome
@@ -124,14 +141,14 @@
                         1)"><img class="imgCar" src="IMG/carrinho.png" alt="Imagem do carrinho"></button> <!-- quantos elementos foram adiconados -->
                      </div>
                 </div>
-                <div class="offset-lg-1 col-lg-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
+                <div class="offset-lg-2 col-lg-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
                     <div class="caixaPromoção2">
                          <img class="imgPromoção" src="IMG/playstation5.webp" alt="Imagem do Playstation 5">
                     </div>
                     <div class="preçoPromoção2">
                         <h3 id="p2nome">Playstation 5</h3>
                         <h4>De 5018,08<br>Para R$<span id="p2preco">4561,98</span> 10%</h4>
-                        <input type="text" class="qtd" placeholder="Quantidade" id="p2quantidade">
+                        <input type="number" min="0" max="20"  class="qtd" placeholder="Quantidade" id="p2quantidade">
                         <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p2nome').textContent, //nome
@@ -151,7 +168,7 @@
                     <div class="preçoPromoção3">
                         <h3 id="p3nome">Battlefield V</h3>
                         <h4>De R$208,68<br>Para R$<span id="p3preco">173,90</span> 20%</h4>
-                        <input type="text" class="qtd" placeholder="Quantidade" id="p3quantidade">
+                        <input type="number" min="0" max="20"  class="qtd" placeholder="Quantidade" id="p3quantidade">
                         <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p3nome').textContent, //nome
@@ -160,14 +177,14 @@
                             3)"><img class="imgCar" src="IMG/carrinho.png" alt="Imagem do carrinho"></button> <!-- quantos elementos foram adiconados -->
                     </div>
                 </div>
-                <div class="offset-lg-1 col-lg-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
+                <div class="offset-lg-2 col-lg-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8 col-xs-12 colunaProdutos">
                     <div class="caixaPromoção4">
                         <img class="imgPromoção"src="IMG/AssasnsCreedValhalla.webp" alt="Imagem do Assassin's Creed Valhalla">
                     </div>
                     <div class="preçoPromoção4">
                         <h3 id="p4nome">Assassin's Creed Valhalla</h3>
                         <h4>De R$188,40<br>Para R$<span id="p4preco">157,00</span> 20%</h4>
-                        <input type="text" class="qtd" placeholder="Quantidade" id="p4quantidade">
+                        <input type="number" min="0" max="20" class="qtd" placeholder="Quantidade" id="p4quantidade">
                         <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p4nome').textContent, //nome
@@ -179,14 +196,14 @@
                 </div>
                 <br>
                 <br>
-                <div class="col-12 text-center">
+                <div class="col-11 text-center">
                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                        <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPC">Mais!</button>
+                        <button type="button" class="btn btn-danger " id="buttonPR">Mais!</button>
                         <a href='#topo'>
-                            <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
+                            <button type="button" class="btn btn-danger ">Voltar ao topo!</button>
                         </a>
                     </div>
-                    <div id="loadingPC"></div>
+                    <div id="loadingPR"></div>
                 </div>
                 
                             
@@ -211,7 +228,7 @@
                             <br>
                             <h5 id="p5nome">Playstation 5</h5>
                             <p>R$ <span id="p5preco">4561,98</span></p>
-                            <input type="text" class="qtd" id="p5quantidade">
+                            <input type="number" min="0" max="20" class="qtd" id="p5quantidade">
                             <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p5nome').textContent, //nome
@@ -270,13 +287,8 @@
             </div>
             <br>
             <br>
-            <div class="col-12 text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPS">Mais!</button>
-                    <a href='#topo'>
-                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
-                    </a>
-                </div>
+            <div class="col-11 text-center">
+                <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPS">Mais!</button>
                 <div id="loadingPS"></div>
             </div>
         </div>
@@ -300,7 +312,7 @@
                             <br>
                             <h5 id="p6nome">Xbox Serie X</h5>
                             <p>R$ <span id="p6preco">4561,98</span></p>
-                            <input type="text" class="qtd" placeholder="Quantidade" id="p6quantidade">
+                            <input type="number" min="0" max="20" class="qtd" placeholder="Quantidade" id="p6quantidade">
                             <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p6nome').textContent, //nome
@@ -356,13 +368,8 @@
             </div>
             <br>
             <br>
-            <div class="col-12 text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonXB">Mais!</button>
-                    <a href='#topo'>
-                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
-                    </a>
-                </div>
+            <div class="col-11 text-center">
+                <button type="button" class="btn btn-danger botaoSectionPage" id="buttonXB">Mais!</button>
                 <div id="loadingXB"></div>
             </div>
         </div>
@@ -386,7 +393,7 @@
                             <br>
                             <h5 id="p7nome">PC Gamer ITX Arena Setup Powered By Asus</h5>
                             <p>R$ <span id="p7preco">4999,00</span></p>
-                            <input type="text" class="qtd" placeholder="Quantidade" id="p7quantidade">
+                            <input type="number" min="0" max="20" class="qtd" placeholder="Quantidade" id="p7quantidade">
                             <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p7nome').textContent, //nome
@@ -443,13 +450,8 @@
             </div>
             <br>
             <br>
-            <div class="col-12 text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPC">Mais!</button>
-                    <a href='#topo'>
-                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
-                    </a>
-                </div>
+            <div class="col-11 text-center">
+                <button type="button" class="btn btn-danger botaoSectionPage" id="buttonPC">Mais!</button>
                 <div id="loadingPC"></div>
             </div>
         </div>
@@ -472,7 +474,7 @@
                             <br>
                             <h5 id="p8nome">Cadeira Gamer Roxtor Warrior Dourada</h5>
                             <p>R$ <span id="p8preco">899,00</span></p>
-                            <input type="text" class="qtd" placeholder="Quantidade" id="p8quantidade">
+                            <input type="number" min="0" max="20" class="qtd" placeholder="Quantidade" id="p8quantidade">
                             <button class="buttonCar" value="Adicionar ao carrinho!" onclick="
                             addCarrinho(
                             document.getElementById('p8nome').textContent, //nome
@@ -528,13 +530,8 @@
             </div>
             <br>
             <br>
-            <div class="col-12 text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger botaoSectionPage" id="buttonCG">Mais!</button>
-                    <a href='#topo'>
-                        <button type="button" class="btn btn-danger botaoSectionPage">Voltar ao topo!</button>
-                    </a>
-                </div>
+            <div class="col-11 text-center">
+                <button type="button" class="btn btn-danger botaoSectionPage" id="buttonCG">Mais!</button>
                 <div id="loadingCG"></div>
             </div>
         </div>
